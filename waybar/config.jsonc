@@ -1,0 +1,12 @@
+{
+    "include": ["/usr/share/sway/templates/waybar/config.jsonc"],
+
+    //"position": "bottom"
+    // this puts the bar on the bottom, turned off because weather dropdown not there
+    
+    "custom/weather": {
+        // overriding to home town 
+        "exec": "/usr/share/sway/scripts/weather.py -c 'Alabaster'",
+    },
+
+}
