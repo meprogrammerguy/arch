@@ -21,4 +21,4 @@ cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
-git -V push
+git push -v
