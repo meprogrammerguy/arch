@@ -1,12 +1,40 @@
 {
     "include": ["/usr/share/sway/templates/waybar/config.jsonc"],
 
-    //"position": "bottom"
-    // this puts the bar on the bottom, turned off because weather dropdown not there
+"modules-right": [
+        // informational
+        //"sway/language",
+        "custom/github",
+        "custom/clipboard",
+        //"custom/zeit",
+        //"cpu",
+        "temperature",
+        //"memory",
+        "battery",
 
-"custom/weather":
-    {
-        "exec": "/usr/share/sway/scripts/weather.py -c Alabaster -t F -d miles"
-    },
+        // connecting
+        "network",
+        "bluetooth",
+        "custom/valent",
 
+        // media
+        "custom/playerctl",
+        "custom/idle_inhibitor",
+        "custom/dnd",
+        "pulseaudio",
+        "backlight",
+
+        // system
+        "custom/adaptive-light",
+        "custom/sunset",
+        "custom/pacman",
+
+        "tray",
+        "clock"
+    ],
+    
+"network":
+{
+        "on-click": "swaymsg exec \\$once \\$term_float nmcli -p device wifi"
+},
 }
