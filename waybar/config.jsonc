@@ -37,4 +37,13 @@
 {
         "on-click": "swaymsg exec \\$once \\$term_float nmcli -p device wifi"
 },
+
+"custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar -m --fahrenheit --location Alabaster",
+    "return-type": "json"
+},
+
 }
