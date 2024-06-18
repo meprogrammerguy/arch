@@ -36,7 +36,7 @@
     
 "network":
 {
-    "on-click": "swaymsg exec \\$once \\$term_float nmtui"
+    "on-click": "swaymsg exec \\$once \\$term_float nmtui connect"
 },
 
 "custom/weather":

@@ -36,8 +36,9 @@ ongoing notes file
     use yad as the wrapper
 10) do todo using tool Todour (installed how to use?)
 11) fingerprint
-12) how to determine user ID
-        maybe put this in a yad wrapper?
+12) determine app ID
+        swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
+        put in a yad wrapper?
 
 
 
