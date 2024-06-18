@@ -8,12 +8,12 @@ ongoing notes file
     movie must be 720p not 1080p
     movie cannot be bigger than 4GB
     (test if removing the windows crap is ok?)
-2) troubleshoot wierd stuff
-    waybar -l debug > waybar.log
-    echo $XDG_CURRENT_DESKTOP = sway
-    /usr/share/xdg-desktop-portal/portals/gtk.portal
-3) reformat add USB drives to work with DVD player
-4) order more USB drives
+x 2) troubleshoot wierd stuff
+    x waybar -l debug > waybar.log
+    x echo $XDG_CURRENT_DESKTOP = sway
+    x /usr/share/xdg-desktop-portal/portals/gtk.portal
+x 3) reformat add USB drives to work with DVD player
+x 4) order more USB drives
 5) system devices (trust the proper ones)
     chromecast D8-8C-79-67-DC-6E
 	RokuUltra 8C-49-62-03-65-1A
@@ -25,7 +25,7 @@ ongoing notes file
 	BRWBCF4D47 BC-F4-D4-7C-56-CE (brother printer)
 	jsmith-win 1C-69-7A-AA-7A-EF
 	jsmith-arch E4-0D-36-5B-B7-15
-6) Add all possible wireless devices to network manager
+x 6) Add all possible wireless devices to network manager
 7) fix my git progamming projects
 		do pyblitz first
 		do pyMadness

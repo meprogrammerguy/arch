@@ -9,7 +9,7 @@ x 7) add recoll (file indexer)
 x	fix all warning messages
 x 8) set up printer
 x		also set up generic cups pdf printing
-9)sudo apt install manuskript
+x 9)sudo apt install manuskript
 x 10) install Calibre
 x 11) set up git (done in step 2.5)
 x 14) install yt-dlg (https://aur.archlinux.org/youtube-dl-gui-git.git)
