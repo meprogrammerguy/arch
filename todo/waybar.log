@@ -1,0 +1,113 @@
+[2024-06-18 08:00:59.331] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/config
+[2024-06-18 08:00:59.331] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/config.jsonc
+[2024-06-18 08:00:59.331] [debug] Found config file: $XDG_CONFIG_HOME/waybar/config.jsonc
+[2024-06-18 08:00:59.331] [info] Using configuration file /home/jsmith/.config/waybar/config.jsonc
+[2024-06-18 08:00:59.331] [info] Including resource file: /usr/share/sway/templates/waybar/config.jsonc
+[2024-06-18 08:00:59.331] [debug] Try expanding: /usr/share/sway/templates/waybar/config.jsonc
+[2024-06-18 08:00:59.331] [debug] Found config file: /usr/share/sway/templates/waybar/config.jsonc
+[2024-06-18 08:00:59.333] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-06-18 08:00:59.333] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/style.css
+[2024-06-18 08:00:59.333] [debug] Try expanding: $HOME/.config/waybar/style.css
+[2024-06-18 08:00:59.333] [debug] Try expanding: $HOME/waybar/style.css
+[2024-06-18 08:00:59.333] [debug] Try expanding: /etc/xdg/waybar/style.css
+[2024-06-18 08:00:59.334] [debug] Found config file: /etc/xdg/waybar/style.css
+[2024-06-18 08:00:59.334] [info] Using CSS file /etc/xdg/waybar/style.css
+[2024-06-18 08:00:59.338] [debug] Output detection done: eDP-1 (Chimei Innolux Corporation 0x1417)
+[2024-06-18 08:00:59.338] [warning] Mapping is not an object
+[2024-06-18 08:00:59.345] [debug] network: new default route via 192.168.0.1 on if2 metric 600
+[2024-06-18 08:00:59.345] [debug] network: wlp0s20f3, new addr 192.168.0.196/24
+[2024-06-18 08:00:59.345] [debug] network: wlp0s20f3, new addr 192.168.0.196/24
+[2024-06-18 08:00:59.348] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.348] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.350] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.350] [debug] Cmd exited with code 1
+[2024-06-18 08:00:59.351] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.351] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.352] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.352] [debug] Cmd exited with code 1
+[2024-06-18 08:00:59.359] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.359] [debug] Cmd exited with code 1
+[2024-06-18 08:00:59.360] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.360] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.362] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.362] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.362] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.363] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.368] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.368] [debug] Cmd exited with code 1
+[2024-06-18 08:00:59.368] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.368] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.372] [debug] GTK widget tree:
+window#waybar.background.top.eDP-1..mode-default:dir(ltr)
+  decoration:dir(ltr)
+  box.horizontal:dir(ltr)
+    box.horizontal.modules-left:dir(ltr)
+      widget:dir(ltr)
+        label#custom-menu.module:dir(ltr)
+      widget:dir(ltr)
+        box#workspaces.horizontal.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-scratchpad.module:dir(ltr)
+    box.horizontal.modules-center:dir(ltr)
+      widget:dir(ltr)
+        label#custom-wf-recorder.module:dir(ltr)
+      widget:dir(ltr)
+        label#mode.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-weather.module:dir(ltr)
+    box.horizontal.modules-right:dir(ltr)
+      widget:dir(ltr)
+        label#custom-github.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-clipboard.module:dir(ltr)
+      widget:dir(ltr)
+        label#temperature.module:dir(ltr)
+      widget:dir(ltr)
+        label#battery.module:dir(ltr)
+      widget:dir(ltr)
+        label#network.module:dir(ltr)
+      widget:dir(ltr)
+        label#bluetooth.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-valent.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-playerctl.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-idle_inhibitor.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-dnd.module:dir(ltr)
+      widget:dir(ltr)
+        label#pulseaudio.module:dir(ltr)
+      widget:dir(ltr)
+        label#backlight.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-adaptive-light.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-sunset.module:dir(ltr)
+      widget:dir(ltr)
+        label#custom-pacman.module:dir(ltr)
+      widget:dir(ltr)
+        box#tray.horizontal.module:dir(ltr)
+      widget:dir(ltr)
+        label#clock.module:dir(ltr)
+
+[2024-06-18 08:00:59.374] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.374] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.376] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.376] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.395] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.395] [debug] Cmd exited with code 0
+[2024-06-18 08:00:59.410] [info] Bar configured (width: 1181, height: 30) for output: eDP-1
+[2024-06-18 08:00:59.876] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:00:59.876] [debug] Cmd exited with code 1
+[2024-06-18 08:01:00.249] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:01:00.250] [debug] Cmd exited with code 1
+[2024-06-18 08:01:48.872] [debug] Added child to reap list: 5603
+[
+  {
+    "success": true
+  }
+]
+[2024-06-18 08:01:48.878] [debug] Received SIGCHLD in signalThread
+[2024-06-18 08:01:48.878] [debug] Reaped child with PID: 5603
+[2024-06-18 08:01:59.013] [info] Quitting.
