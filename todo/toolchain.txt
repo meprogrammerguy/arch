@@ -1,0 +1,25 @@
+toolchain
+x 1) create bootable USB of manjaro ISO
+x 2) download wood looking backgrounds for my sway desktop
+ 3) sway instructions
+===
+(replace alacritty with zsh and oh-my-zsh)
+install using pacman if possible first
+sudo apt install alacritty light sway swaybg swayidle swayimg swaylock waybar wofi fonts-font-awesome
+
+mkdir -p ~/.config/sway ~/.config/waybar ~/.config/wofi
+~/.config/sway/config
+~/.config/sway/audio.sh
+~/.config/sway/exit.sh
+~/.config/sway/lock_screen.sh
+~/.config/waybar/config
+~/.config/waybar/style.css
+~/.config/wofi/config
+~/.config/wofi/style.css
+chmod +x ~/.config/sway/*.sh
+cp wallpaper.jpg ~/.config/sway/wallpaper.jpg
+(all files added to git toolchain)
+
+x 4) download sway config files (saved to git toolchain)
+turn on fingerprint authorization for sudo
+sudo pam-auth-update 
