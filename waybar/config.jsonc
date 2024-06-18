@@ -1,7 +1,8 @@
 {
     "include": ["/usr/share/sway/templates/waybar/config.jsonc"],
 
-"modules-right": [
+"modules-right":
+[
         // informational
         //"sway/language",
         "custom/github",
@@ -31,19 +32,16 @@
 
         "tray",
         "clock"
-    ],
+],
     
 "network":
 {
-        "on-click": "swaymsg exec \\$once \\$term_float nmcli -p device wifi"
+    "on-click": "swaymsg exec \\$once \\$term_float nmtui"
 },
 
-"custom/weather": {
-    "format": "{}°",
-    "tooltip": true,
-    "interval": 3600,
+"custom/weather":
+{
     "exec": "wttrbar -m --fahrenheit --location Alabaster",
-    "return-type": "json"
 },
 
 }

@@ -18,6 +18,8 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
+cp $args $HOME/git/toolchain/manjaro/plans.txt $HOME/git/arch/todo/plans.txt
+cp $args $HOME/git/toolchain/manjaro/notes.txt $HOME/git/arch/todo/notes.txt
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"

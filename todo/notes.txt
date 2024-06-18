@@ -1,0 +1,10 @@
+===
+ongoing notes file
+===
+1) formatting a movie for the DVD player
+    USB set to not require unmount
+    add label
+    format to FAT32
+    movie must be 720p not 1080p
+    movie cannot be bigger than 4GB
+    (test if removing the windows crap is ok?)
