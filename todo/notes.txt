@@ -8,3 +8,38 @@ ongoing notes file
     movie must be 720p not 1080p
     movie cannot be bigger than 4GB
     (test if removing the windows crap is ok?)
+2) troubleshoot wierd stuff
+    waybar -l debug > waybar.log
+    echo $XDG_CURRENT_DESKTOP = sway
+    /usr/share/xdg-desktop-portal/portals/gtk.portal
+3) reformat add USB drives to work with DVD player
+4) order more USB drives
+5) system devices (trust the proper ones)
+    chromecast D8-8C-79-67-DC-6E
+	RokuUltra 8C-49-62-03-65-1A
+	LGwebOSTV 54-B7-BD-B4-A7-28
+	pixel-5a E6-C8-EE-84-27-9A
+	lcc-WL17M04060 34-15-13-1A-C8-58
+	network device 52-B4-84-BA-B8-78
+	network device 3E-A9-37-E7-26-42
+	BRWBCF4D47 BC-F4-D4-7C-56-CE (brother printer)
+	jsmith-win 1C-69-7A-AA-7A-EF
+	jsmith-arch E4-0D-36-5B-B7-15
+6) Add all possible wireless devices to network manager
+7) fix my git progamming projects
+		do pyblitz first
+		do pyMadness
+		do mark-plumb
+8) system maintenance
+9) fast isotousb shell script
+	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync
+    use yad as the wrapper
+10) do todo using tool Todour (installed how to use?)
+11) fingerprint
+12) how to determine user ID
+        maybe put this in a yad wrapper?
+
+
+
+
+	

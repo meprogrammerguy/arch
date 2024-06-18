@@ -2,7 +2,7 @@ plans
 x 1) in router.sh send log to null device
 x 2) setup gocryptfs
 x 2.5) set up git push
-3) setup qbittorrent
+x 3) setup qbittorrent
 x 5) sudo apt install ffmpeg
 x 6) sudo apt-get install winff
 x 7) add recoll (file indexer)
