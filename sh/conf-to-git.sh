@@ -1,5 +1,5 @@
 #!/bin/bash
-upload-icon="/usr/share/icons/Dracula/22/devices/up.svg"
+upload-icon="/usr/share/icons/Dracula/22/actions/upload-media.svg"
 args="-v"
 cd $HOME
 echo "***"
