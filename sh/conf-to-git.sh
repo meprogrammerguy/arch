@@ -18,7 +18,7 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
-cp $args $HOME/.config/profile.d/my-autostart.sh $HOME/git/arch/autostart/.config/autostart/my-autostart.sh
+cp $args $HOME/.config/profile.d/my-autostart.sh $HOME/git/arch/autostart/my-autostart.sh
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
