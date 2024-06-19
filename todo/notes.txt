@@ -39,8 +39,7 @@ x 6) Add all possible wireless devices to network manager
 12) determine app ID
         swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
         put in a yad wrapper?
-
-
-
+13) *** finally a way to get the clipboard ***
+        cliphist list > text.txt
 
 	
