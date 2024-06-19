@@ -6,8 +6,9 @@ ongoing notes file
     add label
     format to FAT32
     movie must be 720p not 1080p
-    movie cannot be bigger than 4GB
-    (test if removing the windows crap is ok?)
+    movie cannot be bigger than 4GB 
+    x (test if removing the windows crap is ok?) it is
+    fix our TV it keeps turning off when hatching a movie?
 x 2) troubleshoot wierd stuff
     x waybar -l debug > waybar.log
     x echo $XDG_CURRENT_DESKTOP = sway
