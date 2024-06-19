@@ -1,5 +1,5 @@
 #!/bin/bash
-upload-icon="/usr/share/icons/Dracula/22/actions/upload-media.svg"
+icon="/usr/share/icons/Dracula/22/actions/upload-media.svg"
 args="-v"
 cd $HOME
 echo "***"
@@ -24,4 +24,4 @@ cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
 git push -v
-notify-send -i $upload-icon 'config files saved to git'
+notify-send -i $icon 'config files saved to git'
