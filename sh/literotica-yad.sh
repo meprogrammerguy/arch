@@ -2,7 +2,7 @@
 title="literotica downloader"
 prompt="Pick an option:"
 options=("series" "page")
-dir_root="$HOME/plain/literotica"
+dir_root="$HOME/decrypt/literotica"
 log_file="$HOME/.tmp/literotica-yad.log"
 warning_icon="/usr/share/icons/Papirus-Light/22x22/status/dialog-error.svg"
 regex='(https?|ftp|file)://[-[:alnum:]\+&@#/%?=~_|!:,.;]*[-[:alnum:]\+&@#/%=~_|]'
