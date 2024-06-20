@@ -42,5 +42,6 @@ x 6) Add all possible wireless devices to network manager
         put in a yad wrapper?
 13) *** finally a way to get the clipboard ***
         cliphist list > text.txt
+14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
 
 	
