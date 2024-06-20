@@ -8,7 +8,7 @@ ongoing notes file
     movie must be 720p not 1080p
     movie cannot be bigger than 4GB 
     x (test if removing the windows crap is ok?) it is
-    fix our TV it keeps turning off when hatching a movie?
+    fix our TV it keeps turning off when watching a movie?
 x 2) troubleshoot wierd stuff
     x waybar -l debug > waybar.log
     x echo $XDG_CURRENT_DESKTOP = sway
@@ -31,17 +31,17 @@ x 6) Add all possible wireless devices to network manager
 		do pyblitz first
 		do pyMadness
 		do mark-plumb
-8) system maintenance
+x 8) system maintenance
 9) fast isotousb shell script
 	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync
     use yad as the wrapper
 10) do todo using tool Todour (installed how to use?)
-11) fingerprint
+x 11) fingerprint
 12) determine app ID
         swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
         put in a yad wrapper?
 13) *** finally a way to get the clipboard ***
         cliphist list > text.txt
-14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
+x 14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
 
 	
