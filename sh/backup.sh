@@ -1,5 +1,5 @@
 #!/bin/bash
-icon="/usr/share/icons/Dracula/22/actions/document-save.svg"
+icon="/usr/share/icons/Dracula/22/actions/document-encrypted.svg"
 cd $HOME
 rm -r -f $HOME/.tmp/backup/
 rm -f $HOME/decrypt/private/.gocryptfs.reverse.conf
