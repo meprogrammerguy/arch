@@ -7,4 +7,4 @@ rm -r -f $HOME/.tmp/backup
 mkdir $HOME/.tmp/backup
 cp $HOME/jsmith/git/arch/private/* $HOME/.tmp/backup/
 gocryptfs $HOME/.tmp/backup/ $HOME/.tmp/restore -q --passfile $HOME/.config/mount.conf
-notify-send -i $icon "files restored to:" "$HOME/.tmp/backup"
+notify-send -i $icon "files decrypted to:" "$HOME/.tmp/backup"
