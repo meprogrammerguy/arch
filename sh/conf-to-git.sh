@@ -19,7 +19,7 @@ cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
 $HOME/.sh/backup.sh
-cp -a $HOME/.tmp/backup/ $HOME/git/arch/private
+cp -a $HOME/.tmp/backup/* $HOME/git/arch/private
 rm -r -f $HOME/.tmp/backup
 cd $HOME/git/arch
 git add -A
