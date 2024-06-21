@@ -16,6 +16,7 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
+cp $args $HOME/.config/sway/scripts/lock_screen.sh $HOME/git/arch/scripts/lock_screen.sh
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
 $HOME/.sh/backup.sh

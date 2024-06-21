@@ -45,8 +45,8 @@ x 11) fingerprint
 x 14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
 x 15) redo local gocryptfs with very strong password make both use this password, store the master keys in lastpass
         x take mount.conf out of conf-to-git.sh
-16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
-        add everything to conf-to-git.sh for the reverse stuff
-        create backup.sh to do this
-        add backup.sh to conf-to-git.sh
+x 16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
+        x add everything to conf-to-git.sh for the reverse stuff
+        x create backup.sh to do this
+        x add backup.sh to conf-to-git.sh
 	
