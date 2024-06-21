@@ -43,9 +43,10 @@ x 11) fingerprint
 13) *** finally a way to get the clipboard ***
         cliphist list > text.txt
 x 14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
-15) redo local gocryptfs with very strong password make both use this password, store the master keys in lastpass
+x 15) redo local gocryptfs with very strong password make both use this password, store the master keys in lastpass
         x take mount.conf out of conf-to-git.sh
-        take important files and use gocryptfs to encrypt them up to arch git repo
-        change conf-to-git.sh to mount fs with a real long password, copy files, unmount fs, then check in 
- 
+16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
+        add everything to conf-to-git.sh for the reverse stuff
+        create backup.sh to do this
+        add backup.sh to conf-to-git.sh
 	
