@@ -1,10 +1,18 @@
 #!/bin/bash
 icon="/usr/share/icons/Dracula/22/actions/document-decrypt.svg"
 cd $HOME
-rm -r -f $HOME/.tmp/restore
+if [ -d $HOME/.tmp/restore ]; then
+    echo "restore directory exists, removing"
+    fusermount -u $HOME/.tmp/restore
+    rm -r -f $HOME/.tmp/restore
+fi
 mkdir $HOME/.tmp/restore
-rm -r -f $HOME/.tmp/backup
-mkdir $HOME/.tmp/backup
-cp $HOME/jsmith/git/arch/private/* $HOME/.tmp/backup/
+if [ -d $HOME/.tmp/backup ]; then
+    echo "encrypted directory exists, decrypting"
+else
+    echo "decrypting from arch repo"
+    mkdir $HOME/.tmp/backup
+    cp $HOME/git/arch/private/* $HOME/.tmp/backup/
+fi
 gocryptfs $HOME/.tmp/backup/ $HOME/.tmp/restore -q --passfile $HOME/.config/mount.conf
-notify-send -i $icon "files decrypted to:" "$HOME/.tmp/backup"
+notify-send -i $icon "files decrypted to:" "$HOME/.tmp/restore"
