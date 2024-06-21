@@ -16,11 +16,11 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
-$HOME/.sh/backup.sh
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
-cp -args $HOME/.tmp/backup/* $HOME/git/arch/private/
-rm -r -f $HOME/.tmp/backup
+$HOME/.sh/backup.sh
+cp -args -r $HOME/.tmp/backup/* $HOME/git/arch/private/*
+#rm -r -f $HOME/.tmp/backup
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
