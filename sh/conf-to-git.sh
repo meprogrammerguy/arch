@@ -21,7 +21,7 @@ cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yam
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
 $HOME/.sh/backup.sh
 cp $args $HOME/.tmp/backup/* $HOME/git/arch/private/
-rmdir -r -f $HOME/.tmp/backup
+rm -r -f $HOME/.tmp/backup
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
