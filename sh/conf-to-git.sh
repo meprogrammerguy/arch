@@ -1,10 +1,7 @@
 #!/bin/bash
 icon="/usr/share/icons/Dracula/22/actions/upload-media.svg"
-args="-v"
+args="-v "
 cd $HOME
-echo "***"
-echo "*** moving config files to git ***"
-echo "***"
 cp $args $HOME/.config/zsh/config.d/zsh.conf $HOME/git/arch/zsh/config.d/zsh.conf
 cp $args $HOME/.vimrc $HOME/git/arch/vim/.vimrc
 cp $args -r $HOME/.sh/* $HOME/git/arch/sh/
@@ -21,11 +18,10 @@ cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yam
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
-$HOME/.sh/backup.sh
-cp -args -r $HOME/.tmp/backup/ $HOME/git/arch/private/* 
+cp -args -r $HOME/.tmp/backup/* $HOME/git/arch/private
 rm -r -f $HOME/.tmp/backup
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
 git push -v
-notify-send -i $icon 'config files saved to git'
+notify-send -i $icon "config files saved to git"
