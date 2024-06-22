@@ -49,4 +49,8 @@ x 16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
         x add everything to conf-to-git.sh for the reverse stuff
         x create backup.sh to do this
         x add backup.sh to conf-to-git.sh
+17) create a fat32 format tool use YAD
+        usb-fat32.sh (upper case label name)
+        sudo mkfs.vfat /dev/sda1 -n MOVIE
+        format ntfx 720x480
 	
