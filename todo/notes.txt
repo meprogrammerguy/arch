@@ -51,6 +51,9 @@ x 16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
         x add backup.sh to conf-to-git.sh
 17) create a fat32 format tool use YAD
         usb-fat32.sh (upper case label name)
-        sudo mkfs.vfat /dev/sda1 -n MOVIE
+        sudo mkfs.fat -F32 /dev/sda1 -n MOVIE
         format ntfx 720x480
-	
+        *** learn about sfdisk ***
+x 18) install stuff in Downloads
+19) play with gparted and exf32 format for USB drives
+
