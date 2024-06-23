@@ -15,21 +15,22 @@
 #   Device     Boot Start      End  Sectors  Size Id Type
 #   /dev/sda1        2048 30719999 30717952 14.6G  b W95 FAT32
 
-
 icon="/usr/share/icons/Dracula/24/actions/flag-green.svg"
-if [[ $(lsblk | grep sda1) ]]
+while [ 1 ]
+do
+    if [[ -z $(lsblk | grep sda) ]]
+    then
+        read -p "Insert a USB drive: Press any key to continue... "
+    else
+        break
+    fi
+done
+if [[ $(lsblk | grep ENFAIN) ]]
 then
-    sudo umount -q -f /dev/sda1
-fi
-if [[ $(sudo fdisk -l | grep sda1) ]]
-then
-    sudo mkfs.fat -F32 /dev/sda1 -n MOVIE
-    sudo umount -q -f /dev/sda1
-    notify-send -i $icon "USB format:" "SUCCESS"
+    sudo umount /dev/disk/by-label/ENFAIN
+    sudo mkfs.fat -v -F32 /dev/disk/by-label/ENFAIN -n MOVIE
 else
-    notify-send -i $icon "USB format:" "NOPE"
+    sudo umount /dev/disk/by-label/MOVIE
+    sudo mkfs.fat -v -F32 /dev/sda -n MOVIE
 fi
-if [[ $(lsblk | grep sda1) ]]
-then
-    sudo umount -q -f /dev/sda1
-fi
+notify-send -i $icon "USB format:" "SUCCESS"
