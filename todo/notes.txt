@@ -57,6 +57,6 @@ x 17) create a fat32 format tool use YAD
 x 18) install stuff in Downloads
 x 19) play with gparted and exf32 format for USB drives
 20) USB tool obtain the LABEL automatically, give the script yad goodness
-21) system maintenance
-        pacman -Qqe > pkglist.txt
-
+x 21) system maintenance
+        x pacman -Qqe > pkglist.txt
+22) start mkchromecast automatically at startup
