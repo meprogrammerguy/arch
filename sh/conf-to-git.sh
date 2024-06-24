@@ -12,6 +12,7 @@ cp $args $HOME/.config/sway/config $HOME/git/arch/sway/config
 cp $args $HOME/.config/sway/dark-wood.jpg $HOME/git/arch/sway/dark-wood.jpg 
 cp $args $HOME/.config/sway/definitions.d/* $HOME/git/arch/sway/definitions.d/
 cp -r $args $HOME/.config/sway/scripts/* $HOME/git/arch/sway/scripts/
+cp -r $args $HOME/.config/sway/examples/* $HOME/git/arch/sway/examples/
 cp $args $HOME/.config/sway/config.d/* $HOME/git/arch/sway/config.d/
 cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.toml
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
