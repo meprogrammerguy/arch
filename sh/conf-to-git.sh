@@ -7,7 +7,7 @@ cp $args $HOME/.vimrc $HOME/git/arch/vim/.vimrc
 cp $args -r $HOME/.sh/* $HOME/git/arch/sh/
 cp $args $HOME/.config/foot/* $HOME/git/arch/foot/
 cp $args $HOME/.config/profile.d/* $HOME/git/arch/profile.d/
-cp $args $HOME/.config/rofi/* $HOME/git/arch/rofi/
+cp -r $args $HOME/.config/rofi/* $HOME/git/arch/rofi/
 cp $args $HOME/.config/sway/config $HOME/git/arch/sway/config
 cp $args $HOME/.config/sway/dark-wood.jpg $HOME/git/arch/sway/dark-wood.jpg 
 cp $args $HOME/.config/sway/definitions.d/* $HOME/git/arch/sway/definitions.d/
