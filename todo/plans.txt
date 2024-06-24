@@ -42,7 +42,7 @@ x	update Pipfile (python version)
 x	(delete Pipfile.lock)
 x	sudo apt install python3-tk (for project mark-plumb)
 04) do todo using tool Todour (installed how to use?)
-05) fingerprint
+x 05) fingerprint
 x 06) figure out this
         x "custom/idle_inhibitor",
         x "custom/dnd",
@@ -50,7 +50,7 @@ x 06) figure out this
 ===
 	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync (fast)
 ===
-08) system maintenance
+x 08) system maintenance
 x 09) weather breaks later on in the day?
 10) fix my git progamming projects
 		do pyblitz first

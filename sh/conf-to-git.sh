@@ -17,6 +17,8 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
+pacman -Qqe > $HOME/.tmp/pkglist.txt
+cp $args $HOME/.tmp/pkglist.txt $HOME/git/arch/packages/pkglist.txt
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
 $HOME/.sh/backup.sh
