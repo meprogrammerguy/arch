@@ -59,4 +59,4 @@ x 19) play with gparted and exf32 format for USB drives
 20) USB tool obtain the LABEL automatically, give the script yad goodness
 x 21) system maintenance
         x pacman -Qqe > pkglist.txt
-22) start mkchromecast automatically at startup
+22) start mkchromecast automatically at startup (test)
