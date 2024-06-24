@@ -196,6 +196,7 @@ update-grub
 usbutils
 vi
 vivaldi-ffmpeg-codecs
+vlc
 vulkan-intel
 vulkan-nouveau
 vulkan-radeon

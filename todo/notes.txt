@@ -60,3 +60,9 @@ x 19) play with gparted and exf32 format for USB drives
 x 21) system maintenance
         x pacman -Qqe > pkglist.txt
 22) start mkchromecast automatically at startup (test)
+23) learn rofi
+24) learn catt
+        catt cast "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        catt cast ./myvideo.mp4
+25) retest VLC (again)
+

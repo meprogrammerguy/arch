@@ -1,2 +1,6 @@
+libdc1394
+libdvdcss
+libmicrodns
 paprefs
 pavucontrol
+vcdimager
