@@ -19,6 +19,11 @@ cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yam
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
 pacman -Qqe > $HOME/.tmp/pkglist.txt
 cp $args $HOME/.tmp/pkglist.txt $HOME/git/arch/packages/pkglist.txt
+pacman -Qqem > $HOME/.tmp/foreignpkglist.txt
+cp $args $HOME/.tmp/foreignpkglist.txt $HOME/git/arch/packages/foreignpkglist.txt
+comm -13 <(pacman -Qqdt | sort) <(pacman -Qqdtt | sort) > $HOME/.tmp/optdeplist.txt
+cp $args $HOME/.tmp/optdeplist.txt $HOME/git/arch/packages/optdeplist.txt
+# optional can be reinstalled with "--asdeps"
 rm -r -f $HOME/git/arch/private
 mkdir $HOME/git/arch/private/
 $HOME/.sh/backup.sh
