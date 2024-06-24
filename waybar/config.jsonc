@@ -41,7 +41,12 @@
 
 "custom/weather":
 {
-    "exec": "wttrbar -m --fahrenheit --location Alabaster",
+    "exec": "wttrbar -m --fahrenheit --location Alabaster"
+},
+
+"tray":
+{
+    //"exec": "swaymsg exec mkchromecast"
 },
 
 }

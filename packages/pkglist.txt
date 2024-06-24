@@ -136,6 +136,7 @@ pacman-log-orphans-hook
 pacseek
 pam_mount
 pamac-gtk
+pasystray
 pcmanfm-gtk3
 perl
 perl-image-exiftool
