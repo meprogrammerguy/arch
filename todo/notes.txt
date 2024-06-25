@@ -65,4 +65,7 @@ x 21) system maintenance
         catt cast "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         catt cast ./myvideo.mp4
 25) retest VLC (again)
+26) make network look good (again)
+ wttrbar -m --fahrenheit --location $(curl -s https://manjaro-sway.download/geoip | jq -r '.city')
+27) make sure weather works in my version display a bad icon and a error tooltip
 
