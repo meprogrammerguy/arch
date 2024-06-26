@@ -3,6 +3,7 @@ x 2) double check config for weather (make sure mine is running)
 3) long term weather make my python fall back to other method
         add fallback-weather method to cfg file to run my other method
 4) do todo using tool Todour (installed how to use?)
+4.1) make custom rofi for the goofy network menu
 5) yad my usb format tool
 6) fix my git progamming projects
 		do pyblitz first
@@ -25,4 +26,4 @@ x 2) double check config for weather (make sure mine is running)
 13) retest VLC (again)
 14) make network look good (again)
         create a custom rofi with it
-x 15) make $once and $term_float work in zsh environment
+x no do 14 fixes this 15) make $once and $term_float work in zsh environment
