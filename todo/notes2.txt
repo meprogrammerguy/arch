@@ -1,5 +1,5 @@
-1) save off weather.gfg
-2) double check config for weather (make sure mine is running
+x 1) save off weather.gfg
+x 2) double check config for weather (make sure mine is running)
 3) long term weather make my python fall back to other method
         add fallback-weather method to cfg file to run my other method
 4) do todo using tool Todour (installed how to use?)
@@ -24,3 +24,5 @@
         catt cast ./myvideo.mp4
 13) retest VLC (again)
 14) make network look good (again)
+        create a custom rofi with it
+x 15) make $once and $term_float work in zsh environment
