@@ -1,6 +1,6 @@
 #!/bin/bash
 icon="/usr/share/icons/Dracula/22/actions/upload-media.svg"
-args="-v "
+args="-f "
 cd $HOME
 cp $args $HOME/.config/zsh/config.d/zsh.conf $HOME/git/arch/zsh/config.d/zsh.conf
 cp $args $HOME/.vimrc $HOME/git/arch/vim/.vimrc
