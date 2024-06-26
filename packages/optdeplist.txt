@@ -1,6 +1,10 @@
+freetds
 libdc1394
 libdvdcss
+libfbclient
 libmicrodns
+mariadb-libs
 paprefs
 pavucontrol
+postgresql-libs
 vcdimager

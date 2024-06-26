@@ -164,6 +164,7 @@ python-protobuf-git
 python-pychromecast
 python-pyqt5
 qbittorrent
+qt5-base
 qt5-tools
 qt5-wayland
 qt5ct
@@ -191,7 +192,7 @@ systemd
 texinfo
 timeshift-autosnap-manjaro
 tk
-todour
+todotxt
 topgrade
 update-grub
 usbutils

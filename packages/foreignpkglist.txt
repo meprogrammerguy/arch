@@ -24,7 +24,7 @@ python-protobuf-git
 python-pychromecast
 rustup-git
 swaylock-effects-git
-todour
+todotxt
 winff-common
 winff-gtk2
 winff-gtk3
