@@ -18,6 +18,7 @@ cp $args $HOME/.config/sworkstyle/config.toml $HOME/git/arch/sworkstyle/config.t
 cp $args $HOME/.config/waybar/* $HOME/git/arch/waybar/
 cp $args $HOME/.config/way-displays/cfg.yaml $HOME/git/arch/way-displays/cfg.yaml
 cp $args $HOME/.config/wluma/config.toml $HOME/git/arch/wluma/config.toml
+cp $args $HOME/.config/weather.cfg $HOME/git/arch/config/weather.cfg
 pacman -Qqe > $HOME/.tmp/pkglist.txt
 cp $args $HOME/.tmp/pkglist.txt $HOME/git/arch/packages/pkglist.txt
 pacman -Qqem > $HOME/.tmp/foreignpkglist.txt
