@@ -36,5 +36,5 @@ rm -r -f $HOME/.tmp/backup
 cd $HOME/git/arch
 git add -A
 git commit -m "update latest setting files"
-git push -v
+git push
 notify-send -i $icon "config files saved to git"
