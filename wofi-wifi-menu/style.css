@@ -1,14 +1,13 @@
 window {
 	opacity: 0.8;
 	border-radius: 5px;
-	/* border: 2px red solid; */
 }
 
 #outer-box {
 	border-radius: 5px;
-	border: 2px #b2ffff solid;
+	border: 2px #bd93f9 solid;
 }
 
 #entry:selected {
-	background-color: #da9154
+	background-color: #ff79c6;
 }
