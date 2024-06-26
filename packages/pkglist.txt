@@ -170,6 +170,7 @@ qt5ct
 qt6-multimedia-ffmpeg
 qt6-wayland
 qt6ct
+rebuild-detector
 recoll
 reiserfsprogs
 remmina

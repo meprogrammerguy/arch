@@ -1,0 +1,26 @@
+1) save off weather.gfg
+2) double check config for weather (make sure mine is running
+3) long term weather make my python fall back to other method
+        add fallback-weather method to cfg file to run my other method
+4) do todo using tool Todour (installed how to use?)
+5) yad my usb format tool
+6) fix my git progamming projects
+		do pyblitz first
+		do pyMadness
+		do mark-plumb
+7) fast isotousb shell script
+	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync
+    use yad as the wrapper
+8) determine app ID
+        swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
+        put in a yad wrapper?
+9) *** finally a way to get the clipboard ***
+        cliphist list > text.txt
+10) USB tool obtain the LABEL automatically, give the script yad goodness
+11) start mkchromecast automatically at startup (test)
+        do I need to worry about this?
+12) learn catt
+        catt cast "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        catt cast ./myvideo.mp4
+13) retest VLC (again)
+14) make network look good (again)

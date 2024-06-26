@@ -58,7 +58,8 @@
 
 "custom/weather":
 {
-    "exec": "$HOME/.sh/weather.py"
+    //"exec": "$HOME/.sh/weather.py"
+     "exec": "wttrbar -m  --fahrenheit --location Alabaster"
 },
 
 "custom/adaptive-light":

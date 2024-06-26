@@ -60,12 +60,15 @@ x 19) play with gparted and exf32 format for USB drives
 x 21) system maintenance
         x pacman -Qqe > pkglist.txt
 22) start mkchromecast automatically at startup (test)
-23) learn rofi
+x 23) learn rofi
 24) learn catt
         catt cast "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
         catt cast ./myvideo.mp4
 25) retest VLC (again)
 26) make network look good (again)
- wttrbar -m --fahrenheit --location $(curl -s https://manjaro-sway.download/geoip | jq -r '.city')
-27) make sure weather works in my version display a bad icon and a error tooltip
+x 27) make sure weather works in my version display a bad icon and a error tooltip
+        wttrbar -m --fahrenheit --location $(curl -s https://manjaro-sway.download/geoip | jq -r '.city')
+28) make sure adaptive brightness don't start till I click on it
+x 29) use this emoj in weather.py \U1F631
+30) change weather.py to fall back to wttrbar when they turn off the web page 
 
