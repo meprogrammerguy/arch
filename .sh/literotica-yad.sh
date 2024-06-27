@@ -41,7 +41,6 @@ series_function() {
         	lynx -dump -listonly $url_value | grep -i "www.literotica.com/s/$story_name" > .links.txt
         	sed -i 's/.* //g' .links.txt
         	file_count=$(wc -l < .links.txt)
-        	echo "file count: $file_count" >> $log_file
         	for i in $(seq 1 $file_count);
 		do
 			file_name=$(sed "${i}q;d" .links.txt)
@@ -54,6 +53,10 @@ series_function() {
     			early_page=$(sed -n "${num}s/^.*=//p" .pages.txt)
     			num1=$(($early_page +1))
     			num2=$(($last_page -1))
+                        if [[ $num2 -eq -1 ]]
+                        then
+                            echo "0. $file_name" >> .pages.txt
+                        fi
     			if [[ $num2 -gt 1 ]]
     			then
     				for t in $(seq $num1 $num2);

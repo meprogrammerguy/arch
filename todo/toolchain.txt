@@ -1,4 +1,0 @@
-***
-*** find a way to examine what I have installed automatically
-*** store this info in a genesis folder
-***

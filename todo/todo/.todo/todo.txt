@@ -2,9 +2,9 @@
 +vlc retest again for @chromecast ability
 (B) +system-maintenance clean up system once a week DUE:2024-07-04
 (D) +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
-(D) @pyblitz fix first
-(D) @pymadness fix second
-(D) @mark-plumb fix last
+(D) fix first @pyblitz
+(D) fix second @pymadness
+(D) fix last @mark-plumb
 +mcstories create a tool like my @literotica tool
 +weather @weather fix my weather.py to fall back to other wttr method if it fails
 +isotousb create a script to write iso file to usb drive
@@ -15,6 +15,10 @@
 (C) @movienight Old Dracula
 (C) @movienight Deamon seed
 (C) @movienight The haunting passion
-+literotica tool fix series bug
-@literotica if the story is only one page then no pages get downloaded
-(C) @movienight the stand
++chowtown Pay every two weeks DUE:2024-07-02
+(C) @movienight the entity
+@literotica there are sed junk files of 0 lenght left behind
++gnome learn and try out gnome apps recently installed
+(C) @movienight finish converting file with winff
++notification create an app to set future alarms and use notify-send in a script
+@notification hook up to my screen calendar
