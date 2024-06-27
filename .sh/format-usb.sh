@@ -14,24 +14,38 @@
 
 #   Device     Boot Start      End  Sectors  Size Id Type
 #   /dev/sda1        2048 30719999 30717952 14.6G  b W95 FAT32
-
+#
+new_label="${1:-MOVIE}"
+title="USB re-format tool"
+options=("insert usb to continue" "quit")
+log_file="$HOME/.tmp/format-usb.log"
 icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
-
-while [ 1 ]
-do
-    if [[ -z $(lsblk | grep sda) ]]
-    then
-        read -p "Insert a USB drive: Press any key to continue... "
-    else
-        break
-    fi
-done
-if [[ $(lsblk | grep ENFAIN) ]]
+lsblk
+if [[ -z $(lsblk | grep sda) ]]
 then
-    sudo umount /dev/disk/by-label/ENFAIN
-    sudo mkfs.fat -v -F32 /dev/disk/by-label/ENFAIN -n MOVIE
-else
-    sudo umount /dev/disk/by-label/MOVIE
-    sudo mkfs.fat -v -F32 /dev/sda -n MOVIE
+    opt=$(yad --no-buttons --text="$title" --list  --column="Options" "${options[@]}");
+    if [[ $opt == *"q"* ]];
+    then
+        notify-send -i $icon "USB format:" "QUIT"
+        exit 1
+    fi
 fi
+
+echo "*** format usb tool ***" > $log_file
+dt=$(date '+%d/%m/%Y %H:%M:%S')
+echo "*** start: $dt ***" >> $log_file
+lsblk >> $log_file
+usb_label=$(lsblk | grep sda1 | sed 's|.*/||')
+if [[ ! -z $usb_label ]]
+then
+    echo "usb mounted by label: $usb_label" >> $log_file
+    sudo umount "/dev/disk/by-label/$usb_label"
+else
+    echo "usb drive not mounted, continuing" >> $log_file
+fi
+echo "new label is $new_label" >> $log_file
+sudo mkfs.fat -v -F32 "/dev/disk/by-label/$usb_label" -n $new_label
+dt=$(date '+%d/%m/%Y %H:%M:%S')
+echo "*** end: $dt ***" >> $log_file
 notify-send -i $icon "USB format:" "SUCCESS"
+
