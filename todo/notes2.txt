@@ -1,7 +1,7 @@
 x 1) save off weather.gfg
 x 2) double check config for weather (make sure mine is running)
 3) long term weather make my python fall back to other method
-        add fallback-weather method to cfg file to run my other method
+        add fallback-weather method to weather.cfg file to run my other method
 4) do todo using tool Todour (installed how to use?)
 x 4.1) make custom rofi for the goofy network menu
 5) yad my usb format tool

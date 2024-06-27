@@ -38,7 +38,7 @@
 
 "network": 
 {
-        "on-click": "/home/jsmith/wofi-wifi-menu/wofi-wifi-menu.sh"
+        "on-click": "$HOME/.config/wofi-wifi-menu/wofi-wifi-menu.sh"
 },
 
 }

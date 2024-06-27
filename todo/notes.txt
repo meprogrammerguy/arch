@@ -1,21 +1,7 @@
-===
-ongoing notes file
-===
-x 1) formatting a movie for the DVD player
-    x USB set to not require unmount
-    x add label
-    x format to FAT32
-    x movie must be 720p not 1080p
-    x movie cannot be bigger than 4GB 
-    x (test if removing the windows crap is ok?) it is
-    x fix our TV it keeps turning off when watching a movie?
-x 2) troubleshoot wierd stuff
-    x waybar -l debug > waybar.log
-    x echo $XDG_CURRENT_DESKTOP = sway
-    x /usr/share/xdg-desktop-portal/portals/gtk.portal
-x 3) reformat add USB drives to work with DVD player
-x 4) order more USB drives
-5) system devices (trust the proper ones)
+==
+    notes for futue projects
+==
+system devices (trust the proper ones)
     chromecast D8-8C-79-67-DC-6E
 	RokuUltra 8C-49-62-03-65-1A
 	LGwebOSTV 54-B7-BD-B4-A7-28
@@ -26,49 +12,9 @@ x 4) order more USB drives
 	BRWBCF4D47 BC-F4-D4-7C-56-CE (brother printer)
 	jsmith-win 1C-69-7A-AA-7A-EF
 	jsmith-arch E4-0D-36-5B-B7-15
-x 6) Add all possible wireless devices to network manager
-7) fix my git progamming projects
-		do pyblitz first
-		do pyMadness
-		do mark-plumb
-x 8) system maintenance
-9) fast isotousb shell script
-	sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync
-    use yad as the wrapper
-10) do todo using tool Todour (installed how to use?)
-x 11) fingerprint
-12) determine app ID
-        swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
-        put in a yad wrapper?
-13) *** finally a way to get the clipboard ***
-        cliphist list > text.txt
-x 14)  gocryptfs --passfile /home/jsmith/.config/mount.conf .encrypt decrypt
-x 15) redo local gocryptfs with very strong password make both use this password, store the master keys in lastpass
-        x take mount.conf out of conf-to-git.sh
-x 16) Learn reverse gocryptfs and store the reverse dir up in the arch git repo
-        x add everything to conf-to-git.sh for the reverse stuff
-        x create backup.sh to do this
-        x add backup.sh to conf-to-git.sh
-x 17) create a fat32 format tool use YAD
-        x usb-fat32.sh (upper case label name)
-        x sudo mkfs.fat -F32 /dev/sda1 -n MOVIE
-        x format ntfx 720x480
-        x *** learn about sfdisk ***
-x 18) install stuff in Downloads
-x 19) play with gparted and exf32 format for USB drives
-20) USB tool obtain the LABEL automatically, give the script yad goodness
-x 21) system maintenance
-        x pacman -Qqe > pkglist.txt
-22) start mkchromecast automatically at startup (test)
-x 23) learn rofi
-24) learn catt
-        catt cast "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        catt cast ./myvideo.mp4
-25) retest VLC (again)
-26) make network look good (again)
-x 27) make sure weather works in my version display a bad icon and a error tooltip
-        wttrbar -m --fahrenheit --location $(curl -s https://manjaro-sway.download/geoip | jq -r '.city')
-28) make sure adaptive brightness don't start till I click on it
-x 29) use this emoj in weather.py \U1F631
-30) change weather.py to fall back to wttrbar when they turn off the web page 
+sudo dd bs=4M if=/home/jsmith/Downloads/manjaro-sway-24.0.1-240602-linux66.iso of=/dev/sdc status=progress oflag=sync
+swaymsg -t subscribe -m '[ "window" ]' | jq -r --unbuffered .container.app_id
+x cliphist list > text.txt
+    x add a send to ~/.tmp/cliphist.txt to the clipboard app
+
 

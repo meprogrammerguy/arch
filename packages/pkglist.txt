@@ -55,11 +55,18 @@ font-config-info-git
 fprintd
 freerdp
 freerdp2
+gdm
 github-cli
 glibc-locales
+gnome-browser-connector
+gnome-control-center
 gnome-epub-thumbnailer
 gnome-keybindings-x11-scaling
 gnome-keyring
+gnome-shell
+gnome-shell-extension-todotxt
+gnome-terminal
+gnome-tweaks
 gocryptfs
 gparted
 gptfdisk
@@ -116,6 +123,7 @@ mhwd
 mhwd-db
 mkchromecast-git
 mkinitcpio-openswap
+moreutils
 mtools-svn
 nano
 nano-syntax-highlighting

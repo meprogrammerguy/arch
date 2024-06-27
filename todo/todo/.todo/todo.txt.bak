@@ -1,0 +1,20 @@
++catt learn how to @chromecast from command prompt
++vlc retest again for @chromecast ability
+(B) +system-maintenance clean up system once a week DUE:2024-07-04
+(D) +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
+(D) @pyblitz fix first
+(D) @pymadness fix second
+(D) @mark-plumb fix last
++mcstories create a tool like my @literotica tool
++weather @weather fix my weather.py to fall back to other wttr method if it fails
++isotousb create a script to write iso file to usb drive
+(A) @usbtool use yad on the prompt
+(A) @usbtool obtain the usbs label and allow my label MOVIE to be overriden 
+(A) +usbtool improvements
+(C) +movienight find some good movies
+(C) @movienight Old Dracula
+(C) @movienight Deamon seed
+(C) @movienight The haunting passion
++literotica tool fix series bug
+@literotica if the story is only one page then no pages get downloaded
+@movienight the stand
