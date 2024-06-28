@@ -48,4 +48,10 @@ sudo mkfs.fat -v -F32 "/dev/disk/by-label/$usb_label" -n $new_label
 dt=$(date '+%d/%m/%Y %H:%M:%S')
 echo "*** end: $dt ***" >> $log_file
 notify-send -i $icon "USB format:" "SUCCESS"
-
+# *** figure out this stuff
+#  lsblk
+#
+#   sudo mkfs.fat -v -F32 "/dev/disk/by-label/MOVIE" -n MOVIE
+#   sudo mkfs.fat -v -F32 /dev/sda -n MOVIE 
+#   sudo mkfs.fat -v -F32 /dev/sda1 -n MOVIE   
+# ***

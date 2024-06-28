@@ -1,10 +1,12 @@
 7-zip-full
 acpi
 acpid
+alarm-clock-applet
 antiword
 apparmor
 appimagelauncher
 aspell-en
+at
 autotiling
 avahi
 b43-fwcutter
@@ -94,6 +96,7 @@ lib32-mesa-vdpau
 lib32-vulkan-intel
 lib32-vulkan-nouveau
 lib32-vulkan-radeon
+libisoburn
 libreoffice-fresh
 libva-mesa-driver
 libva-vdpau-driver
@@ -124,9 +127,10 @@ mhwd-db
 mkchromecast-git
 mkinitcpio-openswap
 moreutils
-mtools-svn
+mtools
 nano
 nano-syntax-highlighting
+nasm
 network-manager-applet
 networkmanager
 networkmanager-openvpn
@@ -172,6 +176,7 @@ python-protobuf-git
 python-pychromecast
 python-pyqt5
 qbittorrent
+qemu-full
 qt5-base
 qt5-tools
 qt5-wayland

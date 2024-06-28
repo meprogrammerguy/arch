@@ -6,3 +6,7 @@ x 2024-06-27 +literotica tool fix series bug
 x 2024-06-27 @movienight the stand
 x 2024-06-27 @literotica if the story is only one page then no pages get downloaded
 x 2024-06-27 +gnome learn and try out gnome apps recently installed
+x 2024-06-27 +usbtool improvements
+x 2024-06-27 @usbtool obtain the usbs label and allow my label MOVIE to be overriden 
+x 2024-06-27 @usbtool use yad on the prompt
+x 2024-06-28 +isotousb create a script to write iso file to usb drive

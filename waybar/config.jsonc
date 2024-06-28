@@ -32,8 +32,8 @@
     
 "custom/weather":
 {
-        //"exec": "$HOME/.sh/weather.py"
-        "exec": "wttrbar -m  --fahrenheit --location Alabaster"
+        "exec": "$HOME/.sh/weather.py"
+        //"exec": "wttrbar -m  --fahrenheit --location Alabaster"
 },
 
 "network": 

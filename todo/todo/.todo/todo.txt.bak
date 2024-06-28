@@ -7,10 +7,6 @@
 (D) fix last @mark-plumb
 +mcstories create a tool like my @literotica tool
 +weather @weather fix my weather.py to fall back to other wttr method if it fails
-+isotousb create a script to write iso file to usb drive
-(A) @usbtool use yad on the prompt
-(A) @usbtool obtain the usbs label and allow my label MOVIE to be overriden 
-(A) +usbtool improvements
 (C) +movienight find some good movies
 (C) @movienight Old Dracula
 (C) @movienight Deamon seed
@@ -18,7 +14,12 @@
 +chowtown Pay every two weeks DUE:2024-07-02
 (C) @movienight the entity
 @literotica there are sed junk files of 0 lenght left behind
-x 2024-06-27 +gnome learn and try out gnome apps recently installed
 (C) @movienight finish converting file with winff
 +notification create an app to set future alarms and use notify-send in a script
 @notification hook up to my screen calendar
++alarms interface my todo to alarm-clock-applet
+@alarms perhaps interface the alarm app to my todo
++usb-mount make work in my environment not x11
++format-usb Added notes to shell, if cannot find label format other way
+@format-usb can detect that usb is there but unmounted, can use other format method
++hello-world-iso image, explore qemu for this
