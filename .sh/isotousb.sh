@@ -40,7 +40,7 @@ echo "the USB is mounted with label: $usb_label" >> $log_file
 echo "============================================================================================" >> $log_file
 
 yad --text-info --text-align=center --title=$title --text="Do you want to continue?" --filename=$log_file
-yad_button=$? > button.txt 
+yad_button=$?
 if [[ $yad_button -gt 0 ]]
 then
     echo "user has cancelled from final confirm screen,  quitting..." >> $log_file
