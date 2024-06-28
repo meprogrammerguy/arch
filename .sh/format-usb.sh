@@ -40,8 +40,10 @@ if [[ ! -z $usb_label ]]
 then
     echo "usb mounted by label: $usb_label" >> $log_file
     sudo umount "/dev/disk/by-label/$usb_label"
+    #sudo mkfs.fat -v -F32 "/dev/disk/by-label/$usb_label" -n $new_label
 else
     echo "usb drive not mounted, continuing" >> $log_file
+    #sudo mkfs.fat -v -F32 /dev/sda1 -n $new_label 
 fi
 echo "new label is $new_label" >> $log_file
 sudo mkfs.fat -v -F32 "/dev/disk/by-label/$usb_label" -n $new_label
@@ -51,7 +53,11 @@ notify-send -i $icon "USB format:" "SUCCESS"
 # *** figure out this stuff
 #  lsblk
 #
-#   sudo mkfs.fat -v -F32 "/dev/disk/by-label/MOVIE" -n MOVIE
-#   sudo mkfs.fat -v -F32 /dev/sda -n MOVIE 
-#   sudo mkfs.fat -v -F32 /dev/sda1 -n MOVIE   
+#   sudo mkfs.fat -v -F32 /dev/disk/by-label/MOVIE -n MOVIE
+#   sudo mkfs.fat -v -F32 /dev/sda -n MOVIE  <==
+#   sudo mkfs.fat -v -F32 /dev/sda1 -n MOVIE  
+#
+#   sudo dd if=/dev/zero of=/dev/sda bs=1M status=progress oflag=sync 1)
+#   sudo dd if=/dev/zero of=/dev/sda1 bs=1M status=progress oflag=sync
+#   sudo dd if=/dev/zero of=/dev/sda2 bs=1M status=progress oflag=sync 2)
 # ***

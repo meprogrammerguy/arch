@@ -23,3 +23,5 @@
 +format-usb Added notes to shell, if cannot find label format other way
 @format-usb can detect that usb is there but unmounted, can use other format method
 +hello-world-iso image, explore qemu for this
+@hello-world-iso web page is: https://intermezzos.github.io/book/first-edition/linux.html
+@hello-world-iso another web page is: https://osinside.github.io/kiwi/working_with_images/iso_to_usb_stick_file_based_deployment.html#
