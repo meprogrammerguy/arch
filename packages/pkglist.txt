@@ -208,6 +208,7 @@ tk
 todotxt
 topgrade
 update-grub
+usbimager
 usbutils
 vi
 vivaldi-ffmpeg-codecs

@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-# iso to usb tool
+# dd image file to usb tool
 #
 
-log_file="$HOME/.tmp/iso-to-usb.log"
-title="ISO-to-USB-tool"
-default_dir="$HOME/.usb-images/"
+log_file="$HOME/.tmp/dd-to-usb.log"
+title="dd-to-USB-tool"
+default_dir="$HOME/.dd-images/"
 echo " " > $log_file
 echo "              $title" >> $log_file
 echo " " >> $log_file
@@ -24,10 +24,10 @@ then
     notify-send -i $icon "There is no USB drive mounted" "quitting"
     exit 1
 fi
-the_iso=$(yad --title=$title --text="enter your ISO file name" --text-align=center --file --filename="$default_dir")
-if [[ -z $the_iso ]]
+the_dd=$(yad --title=$title --text="enter your dd image name" --text-align=center --file --filename="$default_dir")
+if [[ -z $the_dd ]]
 then
-    echo "user has cancelled from ISO choice screen,  quitting..." >> $log_file
+    echo "user has cancelled from dd image choice screen,  quitting..." >> $log_file
     dt=$(date '+%d/%m/%Y %H:%M:%S');
     echo "*** end: $dt ***" >> $log_file
     notify-send -i $icon "$title" "user has cancelled"
@@ -35,9 +35,12 @@ then
 fi
 echo " " >> $log_file
 echo "============================================================================================" >> $log_file
-echo "ISO file to burn: $the_iso" >> $log_file 
+echo "Directory Default:                $default_dir" >> $log_file
+dd_file=$(echo "$the_dd" | sed 's|.*/||')
+echo " " >> $log_file
+echo "dd image file to burn:            $dd_file" >> $log_file 
 usb_label=$(lsblk | grep sda1 | sed 's|.*/||')
-echo "the USB is mounted with label: $usb_label" >> $log_file
+echo "the USB is mounted with label:    $usb_label" >> $log_file
 echo "============================================================================================" >> $log_file
 
 yad --text-info --text-align=center --title=$title --text="Do you want to continue?" --filename=$log_file
@@ -52,7 +55,7 @@ then
 fi
 echo "unmounting /dev/disk/by-label/$usb_label" >> $log_file
 sudo umount "/dev/disk/by-label/$usb_label"
-sudo dd bs=4M if=$the_iso of=/dev/sda status=progress oflag=sync
+sudo dd bs=4M if=$the_dd of=/dev/sda status=progress oflag=sync
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "*** end: $dt success ***" >> $log_file
 notify-send -i $icon "$title" "SUCCESS"

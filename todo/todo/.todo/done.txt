@@ -10,3 +10,6 @@ x 2024-06-27 +usbtool improvements
 x 2024-06-27 @usbtool obtain the usbs label and allow my label MOVIE to be overriden 
 x 2024-06-27 @usbtool use yad on the prompt
 x 2024-06-28 +isotousb create a script to write iso file to usb drive
+x 2024-06-29 +ubuntu-laptop reset this box to vanilla ubuntu
+x 2024-06-29 @movienight the entity
+x 2024-06-29 @movienight Deamon seed
