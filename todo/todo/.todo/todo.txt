@@ -8,8 +8,6 @@
 (E) +mcstories create a tool like my @literotica tool
 +weather @weather fix my weather.py to fall back to other wttr method if it fails
 (C) +movienight find some good movies
-(C) @movienight Old Dracula
-(C) @movienight The haunting passion
 (B) +chowtown Pay every two weeks DUE:2024-07-02
 (C) @movienight finish converting file with winff
 +notification create an app to set future alarms and use notify-send in a script
@@ -17,19 +15,7 @@
 (H) +alarms interface my todo to alarm-clock-applet
 (H) @alarms perhaps interface the alarm app to my todo
 +usb-mount make work in my environment not x11
-(F) +format-usb Added notes to shell, if cannot find label format other way
-(F) @format-usb can detect that usb is there but unmounted, can use other format method
-(G) +hello-world-iso image, explore qemu for this
-(G) @hello-world-iso web page is: https://intermezzos.github.io/book/first-edition/linux.html
-(G) @hello-world-iso another web page is: https://osinside.github.io/kiwi/working_with_images/iso_to_usb_stick_file_based_deployment.html#
-(F) @format-usb make more reliable by writing usb to it with a hidden hello-world.txt file
-(D) +isof32usb create imageUSB on Win 11 then create an iso and burn to usb drives on arch
-(D) @isof32usb create several Win 11 store as iso files on my laptop, then burn when I need a new empty USB
-(E) @mcstories curl this page: https://mcstories.com/DietPan/index.html for a series story
-(E) @mcstories curl this page: https://mcstories.com/EasyA/index.html one page story
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
 (I) +nord-cloud-drive set up a nord cloud directory to my laptop
 (I) @nord-cloud-drive upload my arch config files
-(C) @movienight fright night
-(C) @movienight fright night 2
-+ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
+(D) +ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk

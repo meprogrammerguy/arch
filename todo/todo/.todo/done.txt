@@ -13,3 +13,17 @@ x 2024-06-28 +isotousb create a script to write iso file to usb drive
 x 2024-06-29 +ubuntu-laptop reset this box to vanilla ubuntu
 x 2024-06-29 @movienight the entity
 x 2024-06-29 @movienight Deamon seed
+x 2024-06-29 +isof32usb create imageUSB on Win 11 then create an iso and burn to usb drives on arch
+x 2024-06-29 @mcstories curl this page: https://mcstories.com/DietPan/index.html for a series story
+x 2024-06-29 +format-usb Added notes to shell, if cannot find label format other way
+x 2024-06-29 +hello-world-iso image, explore qemu for this
+x 2024-06-29 @isof32usb create several Win 11 store as iso files on my laptop, then burn when I need a new empty USB
+x 2024-06-29 @format-usb can detect that usb is there but unmounted, can use other format method
+x 2024-06-29 @mcstories curl this page: https://mcstories.com/EasyA/index.html one page story
+x 2024-06-29 @format-usb make more reliable by writing usb to it with a hidden hello-world.txt file
+x 2024-06-29 @hello-world-iso another web page is: https://osinside.github.io/kiwi/working_with_images/iso_to_usb_stick_file_based_deployment.html#
+x 2024-06-29 @hello-world-iso web page is: https://intermezzos.github.io/book/first-edition/linux.html
+x 2024-06-29 @movienight fright night
+x 2024-06-29 @movienight fright night 2
+x 2024-06-29 @movienight Old Dracula
+x 2024-06-29 @movienight The haunting passion
