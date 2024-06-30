@@ -6,7 +6,7 @@
 (A) fix second @pymadness
 (A) fix last @mark-plumb
 (E) +mcstories create a tool like my @literotica tool
-+weather @weather fix my weather.py to fall back to other wttr method if it fails
+x 2024-06-30 +weather @weather fix my weather.py to fall back to other wttr method if it fails
 (C) +movienight find some good movies
 (B) +chowtown Pay every two weeks DUE:2024-07-02
 (C) @movienight finish converting file with winff
@@ -18,4 +18,5 @@
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
 (I) +nord-cloud-drive set up a nord cloud directory to my laptop
 (I) @nord-cloud-drive upload my arch config files
-+ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
+(D) +ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
++dd-to-usb give ability to go to zip file without extracting first

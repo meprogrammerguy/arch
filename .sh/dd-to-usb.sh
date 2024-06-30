@@ -2,10 +2,17 @@
 #
 # dd image file to usb tool
 #
+# other tools needed
+#       USBImager from arch AUD
+#       imageUSB from Win 11
+#
+#   will burn dd or iso files to a USB drive
+#
+# unzip -p archive.zip file1.txt | less (use this to read from zip file, without extracting)
 
 log_file="$HOME/.tmp/dd-to-usb.log"
 title="dd-to-USB-tool"
-default_dir="$HOME/.dd-images/"
+default_dir="$HOME/.config/dd-images/"
 echo " " > $log_file
 echo "              $title" >> $log_file
 echo " " >> $log_file
@@ -43,7 +50,7 @@ usb_label=$(lsblk | grep sda1 | sed 's|.*/||')
 echo "the USB is mounted with label:    $usb_label" >> $log_file
 echo "============================================================================================" >> $log_file
 
-yad --text-info --text-align=center --title=$title --text="Do you want to continue?" --filename=$log_file
+yad --text-info --text-align=center --title=$title --text="Do you want to continue?" --fore=green --filename=$log_file
 yad_button=$?
 if [[ $yad_button -gt 0 ]]
 then
