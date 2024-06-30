@@ -1,5 +1,5 @@
 #!/bin/bash
-icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
+icon="$HOME/.config/icons/my_avatar.ico"
 cd $HOME
 rm -r -f $HOME/.tmp/backup/
 rm -r -f $HOME/decrypt/private/.gocryptfs.reverse.conf

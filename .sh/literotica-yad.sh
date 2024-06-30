@@ -4,7 +4,7 @@ prompt="Pick an option:"
 options=("series" "page")
 dir_root="$HOME/decrypt/literotica"
 log_file="$HOME/.tmp/literotica-yad.log"
-warning_icon="/usr/share/icons/Papirus-Light/22x22/status/dialog-error.svg"
+warning_icon="$HOME/.config/icons/my_avatar.ico"
 regex='(https?|ftp|file)://[-[:alnum:]\+&@#/%?=~_|!:,.;]*[-[:alnum:]\+&@#/%=~_|]'
 series_function() {
         url_value=$(yad --entry \

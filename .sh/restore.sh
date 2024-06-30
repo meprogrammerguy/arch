@@ -1,5 +1,5 @@
 #!/bin/bash
-icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
+icon="$HOME/.config/icons/my_avatar.ico"
 cd $HOME
 if [ -d $HOME/.tmp/restore ]; then
     echo "restore directory exists, removing"

@@ -20,7 +20,7 @@ echo " " >> $log_file
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "start: $dt" >> $log_file
 echo " " >> $log_file
-icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
+icon="$HOME/.config/icons/my_avatar.ico"
 echo " " >> $log_file
 lsblk >> $log_file
 if [[ -z $(lsblk | grep sda) ]]

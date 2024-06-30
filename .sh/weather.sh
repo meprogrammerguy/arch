@@ -6,7 +6,7 @@
 #       result is much more weather uptime on my laptop
 #
 title="weather"
-icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
+icon="$HOME/.config/icons/my_avatar.ico"
 config_file="$HOME/.config/weather.cfg"
 final_result="$HOME/.tmp/weather_1.txt"
 final_method="primary"

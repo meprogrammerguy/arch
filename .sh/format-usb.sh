@@ -19,7 +19,7 @@ new_label="${1:-MOVIE}"
 title="USB re-format tool"
 options=("insert usb to continue" "quit")
 log_file="$HOME/.tmp/format-usb.log"
-icon="/usr/share/icons/Dracula/24@2x/places/user-home.svg"
+icon="$HOME/.config/icons/my_avatar.ico"
 lsblk
 if [[ -z $(lsblk | grep sda) ]]
 then

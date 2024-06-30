@@ -39,6 +39,7 @@ dosfstools
 dracula-gtk-theme
 dracula-icons-git
 dracula-kde-theme-git
+dtrx
 e2fsprogs
 ecryptfs-utils
 efibootmgr

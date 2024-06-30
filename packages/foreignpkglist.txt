@@ -6,6 +6,7 @@ catt
 dracula-gtk-theme
 dracula-icons-git
 dracula-kde-theme-git
+dtrx
 faac-git
 font-config-info-git
 gnome-shell-extension-todotxt
