@@ -28,3 +28,7 @@ x 2024-06-29 @movienight fright night 2
 x 2024-06-29 @movienight Old Dracula
 x 2024-06-29 @movienight The haunting passion
 x 2024-06-30 +weather @weather fix my weather.py to fall back to other wttr method if it fails
+x 2024-06-30 +avatar create my own custom wolf-with-sunglasses icon to use with my notifications
+x 2024-07-01 +PCManFM change term command to be what my mod enter is not the goofy white window
+x 2024-07-01 +weather create a count file of primary, secondary, or error call it weather_uptime.log show percent up on notify
+x 2024-07-01 @weather weather_stats.log is updating, in weather.sh count primary, secondary, and error show as percentages

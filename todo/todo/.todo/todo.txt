@@ -13,13 +13,12 @@
 @notification hook up to my screen calendar
 (H) +alarms interface my todo to alarm-clock-applet
 (H) @alarms perhaps interface the alarm app to my todo
-
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
 (I) +nord-cloud-drive set up a nord cloud directory to my laptop
 (I) @nord-cloud-drive upload my arch config files
-(D) +ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
+(C) +ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
 (J) +dd-to-usb give ability to go to zip file without extracting first
-+avatar create my own custom wolf-with-sunglasses icon to use with my notifications
 (J) @dd-to-usb use dtrx tool to extract archive files, it is installed
-@dd-to-usb created a unpack.sh stub for this project
-+PCManFM change term command to be what my mod enter is not the goofy white window
+(J) @dd-to-usb created a unpack.sh stub for this project
++usb-wipe tool to write zeros to entire drive, will make win 11 dd files much smaller
++zero-USB tool to write nulls to entire disk stub is zero-usb.sh

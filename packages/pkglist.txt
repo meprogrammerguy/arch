@@ -68,7 +68,6 @@ gnome-keybindings-x11-scaling
 gnome-keyring
 gnome-shell
 gnome-shell-extension-todotxt
-gnome-terminal
 gnome-tweaks
 gocryptfs
 gparted
@@ -193,6 +192,7 @@ rsync
 rustup-git
 s-nail
 seahorse
+shotwell
 sof-firmware
 sudo
 sway-services
