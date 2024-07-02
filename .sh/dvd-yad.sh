@@ -37,10 +37,14 @@ $HOME/.tmp/ffmpeg_length.sh > $HOME/.tmp/ffmpeg_length.log
 file_length=$(cat $HOME/.tmp/ffmpeg_length.log)
 slice_array=(${file_length//:/ })
 slices=$[slice_array[0]*2]
-echo "$slices"
-last_slice=$[30+slice_array[1]+1]
-echo "$last_slice"
-#dvd_type="${dvd_file##*.}"
+last_slice=$[slice_array[1]]
+if [[ $last_slice -gt 30 ]]
+then
+    slices=$[slices + 1 ]
+    last_slice=$[last_slice - 29 ]
+else
+    last_slice=$[last_slice + 31 ]
+fi
 dvd_name="${dvd_file%.*}.mpg"
 echo " " >> $log_file
 echo "directory is:         $dvd_dir" >> $log_file
@@ -51,7 +55,6 @@ echo "number of slices:     $slices" >> $log_file
 echo "last slice length:    $last_slice minutes" >> $log_file
 echo " " >> $log_file
 echo "template is:          xx-$dvd_name" >> $log_file 
-#echo "file type is:         $dvd_type" >> $log_file
 echo " " >> $log_file
 echo "============================================================================================" >> $log_file
 
@@ -65,28 +68,47 @@ then
     notify-send -i $icon "$title" "user has cancelled"
     exit 1
 fi
-counter=0
 minutes=0
-#while [ 1 ]
-#do
-    counter=$[counter + 1]
+echo "" > $HOME/.tmp/ffmpeg_info.sh
+chmod a+x $HOME/.tmp/ffmpeg_info.sh
+for i in $(seq 1 $slices);
+do
     hours=$[minutes / 60]
-    minutes=$[minutes - hours * 60 ]
-    time_offset=$(echo "$hours:$minutes:0")
-    counter=$(printf "%02d" $counter)
+    if [ $((i%2)) -eq 0 ];
+    then
+        time_offset=$(echo "$hours:30:0")
+    else
+        time_offset=$(echo "$hours:0:0")
+    fi
+    counter=$(printf "%02d" $i)
     q_dir=$(echo '"'$default_dir.convert/$counter-$dvd_name'"')
+    chunk="30"
+    if [[ $i -eq $slices ]]
+    then
+        chunk=$[last_slice]
+    fi
     ffmpeg_info=$(echo /usr/bin/ffmpeg -ss "$time_offset" -y -i\
         "$q_dvd" \
-        -f dvd -target ntsc-dvd -b:v 5000k -r 30000/1001 -filter:v scale=720:480 -ar 48000 -b:a 384k   -t 0:30:0\
+        -f dvd -target ntsc-dvd -b:v 5000k -r 30000/1001 -filter:v scale=720:480 -ar 48000 -b:a 384k   -t 0:"$chunk":0\
         "$q_dir")
-    echo "$ffmpeg_info" > $HOME/.tmp/ffmpeg_info.sh
-    echo "/usr/bin/ffmpeg -i "$q_dir" 2>&1 | grep Duration | cut -d ' ' -f 4 | sed s/,//" >> $HOME/.tmp/ffmpeg_info.sh
-    chmod a+x $HOME/.tmp/ffmpeg_info.sh
-    cat $HOME/.tmp/ffmpeg_info.sh
-    #$HOME/.tmp/ffmpeg_info.sh
+    echo "$ffmpeg_info" >> $HOME/.tmp/ffmpeg_info.sh
     minutes=$[minutes + 30]
-#done
+done
+$HOME/.tmp/ffmpeg_info.sh
+cat $HOME/.tmp/ffmpeg_info.sh >> $log_file
+echo "/usr/bin/ffmpeg -i $q_dir 2>&1 | grep Duration | cut -d ' ' -f 4 | sed s/,//" > $HOME/.tmp/last_length.sh
+chmod a+x $HOME/.tmp/last_length.sh
+#$HOME/.tmp/last_length.sh > $HOME/.tmp/last_length.log
+last_length=$(cat $HOME/.tmp/ffmpeg_length.log)
+echo "last file length: $last_length"
+echo "last file length: $last_length" >> $log_file
+# mv -v /home/jsmith/Videos/.convert/* "/home/jsmith/Videos/Against All Odds (1984) [720p] [BluRay] [YTS.MX]/"  
+q_mv=$(echo mv -v $default_dir.convert/* '"'$dvd_dir'"'/)
+echo "$q_mv"
+echo "$q_mv" >> $log_file
+#$q_mv
 dt=$(date '+%d/%m/%Y %H:%M:%S');
+echo "*** end: $dt ***"
 echo "*** end: $dt ***" >> $log_file
 notify-send -i $icon "$title" "SUCCESS"
  
