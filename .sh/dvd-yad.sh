@@ -27,28 +27,31 @@ then
     exit 1
 fi
 dvd_dir=$(echo "$the_dvd" | sed 's:/[^/]*$::')
-#if [[ $the_dvd -eq $dvd_dir ]]
-#then
-    #echo "user has not picked a file,  quitting..." >> $log_file
-    #dt=$(date '+%d/%m/%Y %H:%M:%S');
-    #echo "*** end: $dt ***" >> $log_file
-    #notify-send -i $icon "$title" "user has not picked a file"
-    #exit 1
-#fi
 echo " " >> $log_file
 echo "============================================================================================" >> $log_file
 dvd_file=$(echo "$the_dvd" | sed 's|.*/||')
-#echo "/hello/file.txt" | sed 's:/[^/]*$::'
-#dvd_type="${the_dvd##*.}"
-#dvd_type="${filename##*.}"
-dvd_type="${dvd_file##*.}"
+q_dvd=$(echo '"'$the_dvd'"')
+echo "/usr/bin/ffmpeg -i $q_dvd 2>&1 | grep Duration | cut -d ' ' -f 4 | sed s/,//" > $HOME/.tmp/ffmpeg_length.sh
+chmod a+x $HOME/.tmp/ffmpeg_length.sh
+$HOME/.tmp/ffmpeg_length.sh > $HOME/.tmp/ffmpeg_length.log
+file_length=$(cat $HOME/.tmp/ffmpeg_length.log)
+slice_array=(${file_length//:/ })
+slices=$[slice_array[0]*2]
+echo "$slices"
+last_slice=$[30+slice_array[1]+1]
+echo "$last_slice"
+#dvd_type="${dvd_file##*.}"
 dvd_name="${dvd_file%.*}.mpg"
 echo " " >> $log_file
-#echo "the full is:      $the_dvd" >> $log_file
-echo "directory is:     $dvd_dir" >> $log_file
-echo "file is:          $dvd_file" >> $log_file 
-echo "template is:      xx-$dvd_name" >> $log_file 
-echo "file type is:     $dvd_type" >> $log_file
+echo "directory is:         $dvd_dir" >> $log_file
+echo " " >> $log_file
+echo "file is:              $dvd_file" >> $log_file
+echo "File length:          $file_length" >> $log_file
+echo "number of slices:     $slices" >> $log_file
+echo "last slice length:    $last_slice minutes" >> $log_file
+echo " " >> $log_file
+echo "template is:          xx-$dvd_name" >> $log_file 
+#echo "file type is:         $dvd_type" >> $log_file
 echo " " >> $log_file
 echo "============================================================================================" >> $log_file
 
@@ -62,8 +65,6 @@ then
     notify-send -i $icon "$title" "user has cancelled"
     exit 1
 fi
-q_dvd=$(echo '"'$the_dvd'"')
-#q_dir=$(echo '"'$default_dir.convert/xx-temp.mpg'"')
 counter=0
 minutes=0
 #while [ 1 ]
@@ -82,7 +83,7 @@ minutes=0
     echo "/usr/bin/ffmpeg -i "$q_dir" 2>&1 | grep Duration | cut -d ' ' -f 4 | sed s/,//" >> $HOME/.tmp/ffmpeg_info.sh
     chmod a+x $HOME/.tmp/ffmpeg_info.sh
     cat $HOME/.tmp/ffmpeg_info.sh
-    $HOME/.tmp/ffmpeg_info.sh
+    #$HOME/.tmp/ffmpeg_info.sh
     minutes=$[minutes + 30]
 #done
 dt=$(date '+%d/%m/%Y %H:%M:%S');

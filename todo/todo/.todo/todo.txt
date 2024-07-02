@@ -22,3 +22,4 @@
 (J) @dd-to-usb created a unpack.sh stub for this project
 +usb-wipe tool to write zeros to entire drive, will make win 11 dd files much smaller
 +zero-USB tool to write nulls to entire disk stub is zero-usb.sh
+(C) @ffmpeg Show mp4 length then calc number of slices and size of the last one
