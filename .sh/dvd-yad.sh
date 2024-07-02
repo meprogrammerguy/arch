@@ -3,20 +3,16 @@
 # dvd convert and slice tool
 #
 
-# mv -f source target
-
 log_file="$HOME/.tmp/dvd_yad.log"
 title="dvd-convert-slice"
 default_dir="$HOME/Videos/"
 echo " " > $log_file
 echo "              $title" >> $log_file
 echo " " >> $log_file
-echo " " >> $log_file
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "start: $dt" >> $log_file
 echo " " >> $log_file
 icon="$HOME/.config/icons/my_avatar.ico"
-echo " " >> $log_file
 the_dvd=$(yad --title=$title --text="enter video file to convert and slice" --text-align=center --file --filename="$default_dir")
 if [[ -z $the_dvd ]]
 then
@@ -27,7 +23,6 @@ then
     exit 1
 fi
 dvd_dir=$(echo "$the_dvd" | sed 's:/[^/]*$::')
-echo " " >> $log_file
 echo "============================================================================================" >> $log_file
 dvd_file=$(echo "$the_dvd" | sed 's|.*/||')
 q_dvd=$(echo '"'$the_dvd'"')
@@ -36,14 +31,12 @@ chmod a+x $HOME/.tmp/ffmpeg_length.sh
 $HOME/.tmp/ffmpeg_length.sh > $HOME/.tmp/ffmpeg_length.log
 file_length=$(cat $HOME/.tmp/ffmpeg_length.log)
 slice_array=(${file_length//:/ })
-slices=$[slice_array[0]*2]
+slices=$[slice_array[0]*2+1]
 last_slice=$[slice_array[1]]
 if [[ $last_slice -gt 30 ]]
 then
     slices=$[slices + 1 ]
     last_slice=$[last_slice - 29 ]
-else
-    last_slice=$[last_slice + 31 ]
 fi
 dvd_name="${dvd_file%.*}.mpg"
 echo " " >> $log_file
@@ -54,7 +47,7 @@ echo "File length:          $file_length" >> $log_file
 echo "number of slices:     $slices" >> $log_file
 echo "last slice length:    $last_slice minutes" >> $log_file
 echo " " >> $log_file
-echo "template is:          xx-$dvd_name" >> $log_file 
+echo "template is:          00-$dvd_name" >> $log_file 
 echo " " >> $log_file
 echo "============================================================================================" >> $log_file
 
@@ -94,21 +87,15 @@ do
     echo "$ffmpeg_info" >> $HOME/.tmp/ffmpeg_info.sh
     minutes=$[minutes + 30]
 done
+q_mv=$(mv -v $default_dir.convert/* "$dvd_dir/")
+echo "$q_mv" >> $HOME/.tmp/ffmpeg_info.sh
 $HOME/.tmp/ffmpeg_info.sh
 cat $HOME/.tmp/ffmpeg_info.sh >> $log_file
-echo "/usr/bin/ffmpeg -i $q_dir 2>&1 | grep Duration | cut -d ' ' -f 4 | sed s/,//" > $HOME/.tmp/last_length.sh
-chmod a+x $HOME/.tmp/last_length.sh
-#$HOME/.tmp/last_length.sh > $HOME/.tmp/last_length.log
-last_length=$(cat $HOME/.tmp/ffmpeg_length.log)
-echo "last file length: $last_length"
-echo "last file length: $last_length" >> $log_file
-# mv -v /home/jsmith/Videos/.convert/* "/home/jsmith/Videos/Against All Odds (1984) [720p] [BluRay] [YTS.MX]/"  
-q_mv=$(echo mv -v $default_dir.convert/* '"'$dvd_dir'"'/)
-echo "$q_mv"
-echo "$q_mv" >> $log_file
-#$q_mv
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "*** end: $dt ***"
+echo " " >> $log_file
 echo "*** end: $dt ***" >> $log_file
 notify-send -i $icon "$title" "SUCCESS"
+clear
+cat "$log_file"
  
