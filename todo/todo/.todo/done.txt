@@ -32,3 +32,9 @@ x 2024-06-30 +avatar create my own custom wolf-with-sunglasses icon to use with 
 x 2024-07-01 +PCManFM change term command to be what my mod enter is not the goofy white window
 x 2024-07-01 +weather create a count file of primary, secondary, or error call it weather_uptime.log show percent up on notify
 x 2024-07-01 @weather weather_stats.log is updating, in weather.sh count primary, secondary, and error show as percentages
+x 2024-07-02 +movienight find some good movies
+x 2024-07-02 +notification create an app to set future alarms and use notify-send in a script
+x 2024-07-02 +ffmpeg create a script asking for directory. it will split files to 30 min chunks. if last file is small it will rm last and rerun with min chunk
+x 2024-07-02 @movienight finish converting file with winff
+x 2024-07-02 @ffmpeg Show mp4 length then calc number of slices and size of the last one
+x 2024-07-02 +chowtown Pay every two weeks DUE:2024-07-02

@@ -3,6 +3,7 @@
 # dvd convert and slice tool
 #
 
+cd $HOME
 log_file="$HOME/.tmp/dvd_yad.log"
 title="dvd-convert-slice"
 default_dir="$HOME/Videos/"
@@ -87,8 +88,6 @@ do
     echo "$ffmpeg_info" >> $HOME/.tmp/ffmpeg_info.sh
     minutes=$[minutes + 30]
 done
-q_mv=$(mv -v $default_dir.convert/* "$dvd_dir/")
-echo "$q_mv" >> $HOME/.tmp/ffmpeg_info.sh
 $HOME/.tmp/ffmpeg_info.sh
 cat $HOME/.tmp/ffmpeg_info.sh >> $log_file
 dt=$(date '+%d/%m/%Y %H:%M:%S');
@@ -98,4 +97,6 @@ echo "*** end: $dt ***" >> $log_file
 notify-send -i $icon "$title" "SUCCESS"
 clear
 cat "$log_file"
+q_mv=$(mv $default_dir.convert/* "$dvd_dir/")
+echo "$q_mv"
  
