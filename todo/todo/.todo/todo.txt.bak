@@ -6,16 +6,19 @@
 (A) fix second @pymadness
 (A) fix last @mark-plumb
 (E) +mcstories create a tool like my @literotica tool
-@notification hook up to my screen calendar
+
 
 
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
-(I) +nord-cloud-drive set up a nord cloud directory to my laptop
-(I) @nord-cloud-drive upload my arch config files
+
+
 (J) +dd-to-usb give ability to go to zip file without extracting first
 (J) @dd-to-usb use dtrx tool to extract archive files, it is installed
-(J) @dd-to-usb created a unpack.sh stub for this project
+
 
 +zero-USB tool to write nulls to entire disk stub is zero-usb.sh
 
 (B) +chowtown Pay every two weeks DUE:2024-07-16
+(J) @dd-to-usb test 64G write to drive
+(J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
+(J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
