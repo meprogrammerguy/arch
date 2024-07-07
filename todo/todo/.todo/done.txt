@@ -38,3 +38,8 @@ x 2024-07-02 +ffmpeg create a script asking for directory. it will split files t
 x 2024-07-02 @movienight finish converting file with winff
 x 2024-07-02 @ffmpeg Show mp4 length then calc number of slices and size of the last one
 x 2024-07-02 +chowtown Pay every two weeks DUE:2024-07-02
+x 2024-07-06 @pyblitz add a test page dir if the scraper detects the page there it goes there first
+x 2024-07-06 @pyblitz create json file from excel team spreadsheet
+x 2024-07-06 @pyblitz get creation date code working so teams dont get scraped all the time
+x 2024-07-07 @pyblitz refactor teams json file so it is like bornpowerindex file
+x 2024-07-07 @pyblitz make bornpowerindex an excel file

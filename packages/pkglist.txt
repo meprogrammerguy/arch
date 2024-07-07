@@ -69,6 +69,7 @@ gnome-keyring
 gnome-shell
 gnome-shell-extension-todotxt
 gnome-tweaks
+go-yq
 gocryptfs
 gparted
 gptfdisk
