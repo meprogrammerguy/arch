@@ -43,3 +43,4 @@ x 2024-07-06 @pyblitz create json file from excel team spreadsheet
 x 2024-07-06 @pyblitz get creation date code working so teams dont get scraped all the time
 x 2024-07-07 @pyblitz refactor teams json file so it is like bornpowerindex file
 x 2024-07-07 @pyblitz make bornpowerindex an excel file
+x 2024-07-09 @pyblitz make bornpowerindex go to teams.json and populate abbrev and team id
