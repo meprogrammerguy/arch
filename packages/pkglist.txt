@@ -68,6 +68,7 @@ gnome-keybindings-x11-scaling
 gnome-keyring
 gnome-shell
 gnome-shell-extension-todotxt
+gnome-text-editor
 gnome-tweaks
 go-yq
 gocryptfs
@@ -138,7 +139,6 @@ networkmanager-openvpn
 nfs-utils
 nmap
 nordvpn-bin
-notepadqq
 nss-mdns
 ntfs-3g
 nwg-look

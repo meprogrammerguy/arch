@@ -4,7 +4,8 @@ libdvdcss
 libfbclient
 libmicrodns
 mariadb-libs
-paprefs
 pavucontrol
 postgresql-libs
+qt5-webengine
+qt5-websockets
 vcdimager

@@ -44,3 +44,10 @@ x 2024-07-06 @pyblitz get creation date code working so teams dont get scraped a
 x 2024-07-07 @pyblitz refactor teams json file so it is like bornpowerindex file
 x 2024-07-07 @pyblitz make bornpowerindex an excel file
 x 2024-07-09 @pyblitz make bornpowerindex go to teams.json and populate abbrev and team id
+x 2024-07-12 @pyblitz refactor the fields list to be a dictionary with meaningful names like team1
+x 2024-07-13 @pyblitz create function to break apart odds numbers
+x 2024-07-13 @pyblitz create a scrape_espn_odds.py to get the weekly spreads
+x 2024-07-13 @pyblitz add betting talk.csv to espn odds, this is static data
+x 2024-07-15 @pyblitz create function to get scores to scrape_schedule
+x 2024-07-15 @pyblitz scrape_schedule needs a re-write
+x 2024-07-16 @pyblitz add abbrev col to bornpowerindex scraper

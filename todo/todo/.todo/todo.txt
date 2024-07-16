@@ -15,5 +15,6 @@
 (A) @pyblitz get team scrape code working everywhere
 (A) @pyblitz fix this first before season starts
 @literotica remove class SAAWidget__contaner, gets rid of the top images
-(A) @pyblitz create a scrape_espn_odds.py to get the weekly spreads
-(A) @pyblitz add betting talk.csv to espn odds, this is static data
+get screensaver to do the fingerprint thing
+(A) @pyblitz go through the merge code, remove abbreviation merge ../.. not necessary any more
+(A) @pyblitz add back more bornpowerindex teams
