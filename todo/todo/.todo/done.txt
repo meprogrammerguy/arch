@@ -51,3 +51,39 @@ x 2024-07-13 @pyblitz add betting talk.csv to espn odds, this is static data
 x 2024-07-15 @pyblitz create function to get scores to scrape_schedule
 x 2024-07-15 @pyblitz scrape_schedule needs a re-write
 x 2024-07-16 @pyblitz add abbrev col to bornpowerindex scraper
+x 2024-07-17 @pyblitz add back more bornpowerindex teams
+x 2024-07-17 @pyblitz get team scrape code working everywhere
+x 2024-07-17 @pyblitz go through the merge code, remove abbreviation merge ../.. not necessary any more
+x 2024-07-18 @pyblitz remove cols from merges that arent needed
+x 2024-07-18 @pyblitz add warning to merge tools to exit if any overrides are set, clear overrides to run
+x 2024-07-18 @pyblitz fill out merge_teamrankings save it off to defaults directory
+x 2024-07-18 @pyblitz fix combine_stats
+x 2024-07-18 @pyblitz teamrankings needs another look
+x 2024-07-18 @pyblitz the ohio state is missing fix scrape_schedule and scrape_teams
+x 2024-07-18 @pyblitz after all teams are there re-run everything to get latest spreadsheets
+x 2024-07-18 @pyblitz count all espn teams, make sure my scrape_teams finds them all
+x 2024-07-18 @pyblitz somehow the teamrankings code has Nones in some columns, fix
+x 2024-07-19 @pyblitz combine_merge is putting in question marks and None
+x 2024-07-19 @pyblitz make sure the merge and stats are good
+x 2024-07-19 @pyblitz save all JSON files to a json folder, those files just confuse the user
+x 2024-07-20 @pyblitz fix all test code
+x 2024-07-21 @pyblitz question marks in override should become blanks two tx_christan in teamrankings
+x 2024-07-21 +chowtown Pay every two weeks DUE:2024-07-16
+x 2024-07-23 @pyblitz need to add question marks back in combine_merge
+x 2024-07-23 @pyblitz work on xxx error in combine_stats, still an issue
+x 2024-07-23 @pyblitz make the week spreadsheets excel
+x 2024-07-23 @pyblitz need to add a week column to schedule_scrape
+x 2024-07-23 @pyblitz work on score code
+x 2024-07-23 @pyblitz make weeks not hard coded everywhere
+x 2024-07-24 @pyblitz remove stat_file arg from score_week
+x 2024-07-24 @pyblitz work on reports code
+x 2024-07-24 @pyblitz fix this first before season starts
+x 2024-07-24 @mark-plumb fix last
+x 2024-07-24 @pyblitz my spread seems high, is it good
+x 2024-07-25 @pymadness make scrape_bracket work with test files
+x 2024-07-26 @pymadness convert merge.csv to excel
+x 2024-07-26 @pymadness fix neutral it gives the away team the advantage
+x 2024-07-26 @pymadness make sure that the prediction is also not reversed
+x 2024-07-26 @pymadness remove gamepredict from everything
+x 2024-07-27 @pymadness in scrape_bracket add a next slot column
+x 2024-07-27 @pymadness remove all venue code

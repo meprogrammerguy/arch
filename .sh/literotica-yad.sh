@@ -34,7 +34,7 @@ series_function() {
                 dt=$(date '+%d/%m/%Y %H:%M:%S');
                 echo "*** series scraping start: $dt ***" >> $log_file
                 cd $dir_root
-        	rm -r $dir_value
+        	rm -f -r $dir_value
         	mkdir $dir_value
         	cd $dir_value
                 echo "current location: $PWD" >> $log_file
@@ -110,7 +110,7 @@ page_function() {
                 dt=$(date '+%d/%m/%Y %H:%M:%S');
                 echo "*** page scraping start: $dt ***" >> $log_file
                 cd $dir_root
-        	rm -r $dir_value
+        	rm -f -r $dir_value
         	mkdir $dir_value
         	cd $dir_value
                 echo "current location: $PWD" >> $log_file

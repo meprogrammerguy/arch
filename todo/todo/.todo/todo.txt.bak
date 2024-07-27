@@ -1,21 +1,23 @@
 +vlc retest again for @chromecast ability
 (B) +system-maintenance clean up system once a week DUE:2024-07-04
 (A) +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
-(A) fix second @pymadness
-(A) fix last @mark-plumb
 (E) +mcstories create a tool like my @literotica tool
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
 (J) +dd-to-usb give ability to go to zip file without extracting first
 (J) @dd-to-usb use dtrx tool to extract archive files, it is installed
 +zero-USB tool to write nulls to entire disk stub is zero-usb.sh
-(B) +chowtown Pay every two weeks DUE:2024-07-16
 (J) @dd-to-usb test 64G write to drive
 (J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
 (J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
-(A) @pyblitz get team scrape code working everywhere
-(A) @pyblitz fix this first before season starts
 @literotica remove class SAAWidget__contaner, gets rid of the top images
-x 2024-07-16 @pyblitz add abbrev col to bornpowerindex scraper
-get screensaver to do the fingerprint thing
-(A) @pyblitz go through the merge code, remove abbreviation merge ../.. not necessary any more
-(A) @pyblitz add back more bornpowerindex teams
+(A) @pymadness fix second
+(B) +chowtown Pay every two weeks DUE:2024-07-30
+(A) @mark-plumb fix last
+(A) @pymadness in score_matchup create a yad like front end to make easier
+x 2024-07-27 @pymadness remove all venue code
+(A) @pymadness add measure_results tool, moves bracket predict and results to archive for current year
+(A) @pymadness in merge_teams add a created column, like in pyblitz so you dont run accidently
+(A) @pymadness in score_bracket fix the next_index code
+@pymadness add override picks in
+(A) @pymadness add verbose switch back to score_bracket
+(A) @pymadness add verbose switch back to score_matchup
