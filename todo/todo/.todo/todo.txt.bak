@@ -13,11 +13,5 @@
 (A) @pymadness fix second
 (B) +chowtown Pay every two weeks DUE:2024-07-30
 (A) @mark-plumb fix last
-(A) @pymadness in score_matchup create a yad like front end to make easier
-x 2024-07-27 @pymadness remove all venue code
 (A) @pymadness add measure_results tool, moves bracket predict and results to archive for current year
-(A) @pymadness in merge_teams add a created column, like in pyblitz so you dont run accidently
-(A) @pymadness in score_bracket fix the next_index code
-@pymadness add override picks in
-(A) @pymadness add verbose switch back to score_bracket
-(A) @pymadness add verbose switch back to score_matchup
+@pyblitz port GUI from @pymadness to score_matchup

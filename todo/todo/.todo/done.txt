@@ -87,3 +87,9 @@ x 2024-07-26 @pymadness make sure that the prediction is also not reversed
 x 2024-07-26 @pymadness remove gamepredict from everything
 x 2024-07-27 @pymadness in scrape_bracket add a next slot column
 x 2024-07-27 @pymadness remove all venue code
+x 2024-07-28 @pymadness in score_bracket fix the next_index code
+x 2024-07-28 @pymadness add verbose switch back to score_bracket
+x 2024-07-28 @pymadness add verbose switch back to score_matchup
+x 2024-07-28 @pymadness support team overrides in prediction spreadsheet
+x 2024-07-28 @pymadness in merge_teams add a created column, like in pyblitz so you dont run accidently
+x 2024-07-29 @pymadness in score_matchup create a yad like front end to make easier
