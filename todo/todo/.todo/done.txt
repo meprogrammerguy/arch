@@ -100,3 +100,4 @@ x 2024-07-31 @pymadness add measure_results tool, moves bracket predict and resu
 x 2024-07-31 @pyblitz bug in measure_results, rerun and test then release to master
 x 2024-07-31 +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
 x 2024-07-31 @mark-plumb fix last
+x 2024-08-01 @literotica remove class SAAWidget__contaner, gets rid of the top images

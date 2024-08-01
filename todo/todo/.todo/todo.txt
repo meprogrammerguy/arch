@@ -8,6 +8,4 @@
 (J) @dd-to-usb test 64G write to drive
 (J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
 (J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
-@literotica remove class SAAWidget__contaner, gets rid of the top images
-
 (B) +chowtown Pay every two weeks DUE:2024-08-13
