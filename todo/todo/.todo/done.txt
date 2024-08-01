@@ -93,3 +93,10 @@ x 2024-07-28 @pymadness add verbose switch back to score_matchup
 x 2024-07-28 @pymadness support team overrides in prediction spreadsheet
 x 2024-07-28 @pymadness in merge_teams add a created column, like in pyblitz so you dont run accidently
 x 2024-07-29 @pymadness in score_matchup create a yad like front end to make easier
+x 2024-07-30 @pyblitz port GUI from @pymadness to score_matchup
+x 2024-07-31 @pymadness fix second
+x 2024-07-31 @pyblitz bug in measure_results, rerun and test then release to master
+x 2024-07-31 @pymadness add measure_results tool, moves bracket predict and results to archive for current year
+x 2024-07-31 @pyblitz bug in measure_results, rerun and test then release to master
+x 2024-07-31 +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
+x 2024-07-31 @mark-plumb fix last

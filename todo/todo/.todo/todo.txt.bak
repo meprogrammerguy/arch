@@ -1,6 +1,5 @@
 +vlc retest again for @chromecast ability
 (B) +system-maintenance clean up system once a week DUE:2024-07-04
-(A) +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
 (E) +mcstories create a tool like my @literotica tool
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
 (J) +dd-to-usb give ability to go to zip file without extracting first
@@ -10,8 +9,5 @@
 (J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
 (J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
 @literotica remove class SAAWidget__contaner, gets rid of the top images
-(A) @pymadness fix second
-(B) +chowtown Pay every two weeks DUE:2024-07-30
-(A) @mark-plumb fix last
-(A) @pymadness add measure_results tool, moves bracket predict and results to archive for current year
-@pyblitz port GUI from @pymadness to score_matchup
+
++chowtown Pay every two weeks DUE:2024-08-13
