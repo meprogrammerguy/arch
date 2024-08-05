@@ -75,12 +75,13 @@ series_function() {
      		return 1
 	fi
 	sed -i 's/.* //g' .pages.txt
-        echo "*** retrieving files ***" >> $log_file
-        cat .pages.txt >> $log_file
-        wget -i .pages.txt -q -E
-        dt=$(date '+%d/%m/%Y %H:%M:%S');
-        echo "*** page scraping end: $dt ***" >> $log_file
-        return 0
+    echo "*** retrieving files ***" >> $log_file
+    cat .pages.txt >> $log_file
+    wget -i .pages.txt -q -E
+    sed -i 's/<img[^>]*>//g' *.html
+    dt=$(date '+%d/%m/%Y %H:%M:%S');
+    echo "*** page scraping end: $dt ***" >> $log_file
+    return 0
 }
 page_function() {
         url_value=$(yad --entry \
@@ -150,9 +151,10 @@ page_function() {
 	echo "*** retrieving files ***" >> $log_file
 	cat .pages.txt >> $log_file
 	wget -i .pages.txt -q -E
-        dt=$(date '+%d/%m/%Y %H:%M:%S');
-        echo "*** page scraping end: $dt ***" >> $log_file
-        return 0
+	sed -i 's/<img[^>]*>//g' *.html
+	dt=$(date '+%d/%m/%Y %H:%M:%S');
+    echo "*** page scraping end: $dt ***" >> $log_file
+    return 0
 }
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "*** start: $dt ***" > $log_file

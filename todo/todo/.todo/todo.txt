@@ -9,3 +9,7 @@
 (J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
 (J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
 (B) +chowtown Pay every two weeks DUE:2024-08-13
+@imgtoiso create img to iso tool
+(A) @qemu get oberon and haiku running in a vm
+(A) @qemu learn lisp my new os will be based on this
+(A) @qemu create my own os in qemu using lisp

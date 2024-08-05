@@ -3,9 +3,11 @@ libdc1394
 libdvdcss
 libfbclient
 libmicrodns
+lldb
 mariadb-libs
 pavucontrol
 postgresql-libs
+python-myst-parser
 qt5-webengine
 qt5-websockets
 vcdimager

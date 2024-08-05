@@ -16,11 +16,14 @@ bluetui
 bluez
 bluez-utils
 brave-browser
+bridge-utils
 brother-mfc-j4335dw
 btrfs-progs
 bzip2
 calibre
 catt
+cc65
+cdrtools
 celluloid
 cliphist
 coreutils
@@ -43,6 +46,7 @@ dtrx
 e2fsprogs
 ecryptfs-utils
 efibootmgr
+etcher-bin
 ethtool
 exfatprogs
 f2fs-tools
@@ -83,10 +87,12 @@ gvfs
 gvfs-mtp
 gvim
 helix
+imagewriter
 imv
 inetutils
 informant
 intel-ucode
+iptables-nft
 jfsutils
 jq
 keepassxc
@@ -98,10 +104,12 @@ lib32-mesa-vdpau
 lib32-vulkan-intel
 lib32-vulkan-nouveau
 lib32-vulkan-radeon
+libguestfs
 libisoburn
 libreoffice-fresh
 libva-mesa-driver
 libva-vdpau-driver
+libvirt
 linux66
 logrotate
 lvm2
@@ -144,6 +152,7 @@ ntfs-3g
 nwg-look
 nwg-panel
 oh-my-zsh
+openbsd-netcat
 os-prober
 pacman-log-orphans-hook
 pacseek
@@ -157,6 +166,7 @@ playerctl
 polkit-explorer-git
 polkit-gnome
 poweralertd
+poweriso-gui
 pptpclient
 protobuf-git
 pulsemixer
@@ -192,6 +202,7 @@ remmina
 rsync
 rustup-git
 s-nail
+sbcl
 seahorse
 shotwell
 sof-firmware
@@ -209,10 +220,13 @@ timeshift-autosnap-manjaro
 tk
 todotxt
 topgrade
+udftools
 update-grub
 usbimager
 usbutils
 vi
+virt-manager
+virt-viewer
 vivaldi-ffmpeg-codecs
 vlc
 vulkan-intel
@@ -224,6 +238,9 @@ waybar
 wdisplays
 wget
 which
+wine
+wine-gecko
+wine-mono
 winff-common
 winff-gtk2
 winff-gtk3
@@ -245,6 +262,7 @@ xf86-video-amdgpu
 xf86-video-ati
 xf86-video-intel
 xf86-video-nouveau
+xfburn
 xfsprogs
 xorg-xwayland
 xterm

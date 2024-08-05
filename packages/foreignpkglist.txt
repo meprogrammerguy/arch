@@ -3,10 +3,12 @@ alarm-clock-applet
 bluetui
 brother-mfc-j4335dw
 catt
+cc65
 dracula-gtk-theme
 dracula-icons-git
 dracula-kde-theme-git
 dtrx
+etcher-bin
 faac-git
 font-config-info-git
 gnome-shell-extension-todotxt
@@ -14,6 +16,7 @@ informant
 mkchromecast-git
 nordvpn-bin
 polkit-explorer-git
+poweriso-gui
 protobuf-git
 python-aiofile
 python-aiopath

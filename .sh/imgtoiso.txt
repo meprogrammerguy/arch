@@ -1,0 +1,3 @@
+ sudo mkdir /media/DISK1   
+ sudo mount -o loop Disk1.img /mnt/DISK1       
+  mkisofs -o Disk1.iso /mnt/DISK1    

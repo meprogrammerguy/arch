@@ -8,5 +8,8 @@
 (J) @dd-to-usb test 64G write to drive
 (J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
 (J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
-x 2024-08-01 @literotica remove class SAAWidget__contaner, gets rid of the top images
 (B) +chowtown Pay every two weeks DUE:2024-08-13
+@imgtoiso create img to iso tool
+(A) @qemu get oberon and haiku running in a vm
+(A) @qemu learn lisp my new os will be based on this
+(B) @qemu create my own os in qemu using lisp

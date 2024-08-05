@@ -101,3 +101,5 @@ x 2024-07-31 @pyblitz bug in measure_results, rerun and test then release to mas
 x 2024-07-31 +gitdevo fix projects @mark-plumb @pyblitz and @pymadness
 x 2024-07-31 @mark-plumb fix last
 x 2024-08-01 @literotica remove class SAAWidget__contaner, gets rid of the top images
+x 2024-08-02 @qemu learn about and install virtual system, try puppy linux first or find an old dos 3.3 or windows image
+x 2024-08-03 @qemu add usb support to FreeDOS and WIN3.11 virtual boxes
