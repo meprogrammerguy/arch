@@ -179,3 +179,4 @@ done
 dt=$(date '+%d/%m/%Y %H:%M:%S');
 echo "*** end $dt ***" >> $log_file
 yad --text-info --button=EXIT:0 --text="literotica downloader log" --filename=$log_file
+cd $HOME

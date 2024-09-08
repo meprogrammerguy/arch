@@ -103,3 +103,13 @@ x 2024-07-31 @mark-plumb fix last
 x 2024-08-01 @literotica remove class SAAWidget__contaner, gets rid of the top images
 x 2024-08-02 @qemu learn about and install virtual system, try puppy linux first or find an old dos 3.3 or windows image
 x 2024-08-03 @qemu add usb support to FreeDOS and WIN3.11 virtual boxes
+x 2024-08-07 @qemu create sanos
+x 2024-08-10 @qemu add newest cc and nasm source to my sanos, try to compile
+x 2024-08-10 @qemu create my own os in qemu using lisp
+x 2024-08-10 @qemu get oberon and haiku running in a vm
+x 2024-08-10 @hot-cross-stuff load mal and malcc to play with creating a language and learning lisp
+x 2024-08-10 @qemu get to compile in sanos dir
+x 2024-08-10 @qemu learn lisp my new os will be based on this
+x 2024-08-10 +system-maintenance clean up system once a week DUE:2024-07-04
+x 2024-08-16 +chowtown Pay every two weeks DUE:2024-08-13
+x 2024-08-30 +chowtown Pay every two weeks DUE:2024-08-27

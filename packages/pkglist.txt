@@ -36,6 +36,7 @@ device-mapper
 dex
 dhclient
 diffutils
+dmidecode
 dmraid
 dnsmasq
 dosfstools
@@ -162,6 +163,8 @@ pasystray
 pcmanfm-gtk3
 perl
 perl-image-exiftool
+perl-io-string
+perl-sort-versions
 playerctl
 polkit-explorer-git
 polkit-gnome
@@ -199,6 +202,7 @@ rebuild-detector
 recoll
 reiserfsprogs
 remmina
+roswell
 rsync
 rustup-git
 s-nail
@@ -215,7 +219,12 @@ swaync
 sworkstyle
 sysfsutils
 systemd
+termscp
 texinfo
+texlive-doc
+texlive-latex
+texlive-latexextra
+texlive-plaingeneric
 timeshift-autosnap-manjaro
 tk
 todotxt

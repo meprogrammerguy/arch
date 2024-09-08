@@ -24,7 +24,6 @@ python-caio
 python-casttube
 python-poetry-core-git
 python-poetry-git
-python-polib
 python-protobuf-git
 python-pychromecast
 rustup-git

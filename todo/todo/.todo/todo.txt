@@ -1,15 +1,8 @@
-+vlc retest again for @chromecast ability
-(B) +system-maintenance clean up system once a week DUE:2024-07-04
 (E) +mcstories create a tool like my @literotica tool
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
-(J) +dd-to-usb give ability to go to zip file without extracting first
-(J) @dd-to-usb use dtrx tool to extract archive files, it is installed
-+zero-USB tool to write nulls to entire disk stub is zero-usb.sh
-(J) @dd-to-usb test 64G write to drive
-(J) @dd-to-usb create a win 11 bin for my new usbs arriving saturday F32 and NTFS
-(J) @dd-to-usb create NTFS dd files for 16G and 64G usb drives
-(B) +chowtown Pay every two weeks DUE:2024-08-13
-@imgtoiso create img to iso tool
-(A) @qemu get oberon and haiku running in a vm
-(A) @qemu learn lisp my new os will be based on this
-(A) @qemu create my own os in qemu using lisp
+(A) @learn go through the learning common lisp book
+(A) @learn play with os book
+(A) @learn write some code in lisp
+(A) @learn write @mcstories scraper in lisp with the bash lisp as help
+(A) @learn rachet found what I need here
+(B) +chowtown Pay every two weeks DUE:2024-09-10
