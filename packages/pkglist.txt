@@ -28,6 +28,7 @@ celluloid
 cliphist
 coreutils
 cpupower
+croc
 cronie
 cryptsetup
 cups-pdf
@@ -91,7 +92,6 @@ helix
 imagewriter
 imv
 inetutils
-informant
 intel-ucode
 iptables-nft
 jfsutils
@@ -101,14 +101,12 @@ kvantum
 laptop-mode-tools
 less
 lib32-libva-vdpau-driver
-lib32-mesa-vdpau
 lib32-vulkan-intel
 lib32-vulkan-nouveau
 lib32-vulkan-radeon
 libguestfs
 libisoburn
 libreoffice-fresh
-libva-mesa-driver
 libva-vdpau-driver
 libvirt
 linux66
@@ -132,10 +130,8 @@ mdadm
 mediainfo-gui
 memtest86+
 memtest86+-efi
-mesa-vdpau
 mhwd
 mhwd-db
-mkchromecast-git
 mkinitcpio-openswap
 moreutils
 mtools
@@ -153,6 +149,7 @@ ntfs-3g
 nwg-look
 nwg-panel
 oh-my-zsh
+okular
 openbsd-netcat
 os-prober
 pacman-log-orphans-hook
@@ -184,11 +181,11 @@ python-pipenv
 python-pipenv-to-requirements
 python-pipx
 python-poetry-core-git
-python-poetry-git
 python-polib
 python-protobuf-git
 python-pychromecast
 python-pyqt5
+python-websockets-git
 qbittorrent
 qemu-full
 qt5-base
@@ -198,6 +195,7 @@ qt5ct
 qt6-multimedia-ffmpeg
 qt6-wayland
 qt6ct
+rar
 rebuild-detector
 recoll
 reiserfsprogs
@@ -276,7 +274,8 @@ xfsprogs
 xorg-xwayland
 xterm
 yay
-yt-dlg-git
+youtube-dl-git
+youtube-dl-gui-bin
 yt-dlp-git
 zathura
 zathura-pdf-poppler

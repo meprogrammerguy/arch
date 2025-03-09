@@ -1,9 +1,25 @@
 (E) +mcstories create a tool like my @literotica tool
 (E) @mcstories curl this page: https://mcstories.com/GoddamnCreep/index.html example of a 4 page story
-(A) @learn go through the learning common lisp book
-(A) @learn play with os book
-(A) @learn write some code in lisp
-(A) @learn write @mcstories scraper in lisp with the bash lisp as help
-x 2024-08-30 +chowtown Pay every two weeks DUE:2024-08-27
-(A) @learn rachet found what I need here
-(B) +chowtown Pay every two weeks DUE:2024-09-10
+
+
+
+
+
+
+(C) @pyblitz bug in score_week, in find team and in find abbrev routines
+
+
+
+
+
+
+
+
+
+
+
+
+
+(B) +chowtown Pay every two weeks DUE:2025-03-11
+(A) @update system with sudo pacman -Syu
+(A) @kay funeral 2025-03-08 from 2-4 at Cross Creek Baptist Church in Pelham, AL

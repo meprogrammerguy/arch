@@ -1,6 +1,5 @@
 7-zip-full
 alarm-clock-applet
-bluetui
 brother-mfc-j4335dw
 catt
 cc65
@@ -10,10 +9,11 @@ dracula-kde-theme-git
 dtrx
 etcher-bin
 faac-git
+ffmpeg2theora
 font-config-info-git
 gnome-shell-extension-todotxt
-informant
-mkchromecast-git
+lib32-libva-vdpau-driver
+libva-vdpau-driver
 nordvpn-bin
 polkit-explorer-git
 poweriso-gui
@@ -23,9 +23,11 @@ python-aiopath
 python-caio
 python-casttube
 python-poetry-core-git
-python-poetry-git
 python-protobuf-git
 python-pychromecast
+python-websockets-git
+rar
+reiserfsprogs
 rustup-git
 swaylock-effects-git
 todotxt
@@ -38,5 +40,6 @@ winff-qt6
 wl-clipboard-git
 wttrbar
 xdg-desktop-portal-hyprland-git
-yt-dlg-git
+youtube-dl-git
+youtube-dl-gui-bin
 yt-dlp-git
